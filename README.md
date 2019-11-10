@@ -16,12 +16,12 @@
 
 ### Part Ⅰ 基础篇
 
-* [第一章 xxxx](chapter01/README.md)
-    * [1.1 xxxx](chapter01/1.1-xxx.md)
-    * [1.2 xxxx](chapter01/1.2-xxx.md)
-    * [1.3 xxxx](chapter01/1.3-xxx.md)
+* [第一章 云原生基础](chapter01/README.md)
+    * [1.1 云原生的历史](chapter01/1.1-cloud-native-history.md)
+    * [1.2 需要准备的知识](chapter01/1.2-introduction.md)
+    * [1.3 云原生的定义](chapter01/1.3-cloud-native-define.md)
     * [小结](chapter01/END.md)
-* [第二章 xxxx](chapter02/README.md)
+* [第二章 应用编排与管理](chapter02/README.md)
     * [2.1 xxxx](chapter02/2.1-xxx.md)
     * [2.2 xxxx](chapter02/2.2-xxx.md)
     * [2.3 xxxx](chapter02/2.3-xxx.md)
@@ -66,9 +66,6 @@
 
 如果你遇到了问题，欢迎提 [Github Issue](https://github.com/erdong/cloudnative-notes/issues) , 大家一起交流。
 
-# Thanks
-
-感谢 XXX
 
 # License
 
