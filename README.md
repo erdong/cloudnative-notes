@@ -32,7 +32,13 @@
     * [3.3 xxxx](chapter03/3.3-xxx.md)
     * [小结](chapter03/END.md)
 
-### Part ⅠⅠ 进阶篇
+### Part ⅠⅠ 操作系统
+
+### Part ⅠⅠⅠ 网络
+
+### Part IV 存储
+
+### Part V 容器和容器编排
 
 * [第四章 xxxx](chapter04/README.md)
     * [4.1 xxxx](chapter04/4.1-xxx.md)
@@ -44,17 +50,24 @@
     * [6.1 xxxx](chapter06/6.1-xxx.md)
     * [小结](chapter06/END.md)
 
-### Part ⅠⅠⅠ 实战篇
+### Part VI 可观察性 (OBSERVABILITY)
 
-* [第七章 xxxx](chapter07/README.md)
-    * [7.1 xxxx](chapter07/7.1-xxx.md)
+* [第七章 指标监控](chapter07-metrics/README.md)
+    * [7.1 Prometheus](chapter07-metrics/7.1-prometheus.md)
+    * [7.2 Zabbix 介绍](chapter07-metrics/7.2-zabbix-introduction.md)
+    * [7.3 Zabbix 安装](chapter07-metrics/7.3-zabbix-install.md)
     * [小结](chapter07/END.md)
-* [第八章 xxxx](chapter08/README.md)
+* [第八章 日志监控](chapter08-logs/README.md)
     * [8.1 xxxx](chapter08/8.1-xxx.md)
     * [小结](chapter08/END.md)
-* [第九章 xxxx](chapter09/README.md)
+* [第九章  APM](chapter09/README.md)
     * [9.1 xxxx](chapter09/9.1-xxx.md)
     * [小结](chapter02/END.md)
+* [第十章  数据展示](chapter09/README.md)
+    * [9.1  Grafana](chapter09/9.1-xxx.md)
+    * [小结](chapter02/END.md)
+
+### Part VII SRE
 
 
 # Feedback
