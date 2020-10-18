@@ -85,30 +85,33 @@
 
 * [第一章  数据展示](chapterF-01-Analytics-Platform/README.md)
     * [1.1  什么是 Grafana](chapterF-01-Analytics-Platform/F-1.1-what-is-grafana.md)
-    * [1.2  定制 Grafana 首页](chapterF-01-Analytics-Platform/F-1.1-change-the-default-home-dashboard.md)
-    * [1.3  Panel Clock](chapterF-01-Analytics-Platform/F-1.1-panel-clock.md)
+    * [1.2  定制 Grafana 首页](chapterF-01-Analytics-Platform/F-1.2-change-the-default-home-dashboard.md)
+    * [1.3  Panel Clock](chapterF-01-Analytics-Platform/F-1.3-panel-clock.md)
+    * [1.4  Grafana 告警](chapterF-01-Analytics-Platform/F-1.4-what-is-grafana-alerts.md)
     * [小结](chapterF-01-Analytics-Platform/END.md)
 
-* [第二章 指标监控](chapterF-02-Metrics/README.md)
-    * [2.1 Prometheus](chapterF-02-Metrics/F-2.1-prometheus.md)
-    * [2.2 Zabbix 介绍](chapterF-02-Metrics/F-2.2-zabbix-introduction.md)
-    * [2.3 Zabbix 安装](chapterF-02-Metrics/F-2.3-zabbix-install.md)
-    * [小结](chapterF-02-Metric/END.md)
-* [第三章 日志监控](chapterF-03-Logs/README.md)
-    * [3.1 xxxx](chapterF-03-Logs/F-3.1-xxx.md)
-    * [小结](chapterF-03-Logs/END.md)
+* [第二章 指标监控](chapterF-02-Metrics-Monitor/README.md)
+    * [2.1 Prometheus](chapterF-02-Metrics-Monitor/F-2.1-prometheus.md)
+    * [2.2 Zabbix 介绍](chapterF-02-Metrics-Monitor/F-2.2-zabbix-introduction.md)
+    * [2.3 Zabbix 安装](chapterF-02-Metrics-Monitor/F-2.3-zabbix-install.md)
+    * [小结](chapterF-02-Metric-Monitor/END.md)
+* [第三章 日志监控](chapterF-03-Logs-Monitor/README.md)
+    * [3.1 xxxx](chapterF-03-Logs-Monitor/F-3.1-xxx.md)
+    * [小结](chapterF-03-Logs-Monitor/END.md)
 * [第四章  APM](chapterF-04-APM/README.md)
     * [4.1 xxxx](chapterF-04-APM/F-4.1-xxx.md)
     * [小结](chapterF-04-APM/END.md)
 
 
 ### Part VII SRE
-* [第一章 持续集成](chapterG-01/README.md)
-    * [1.1 xxxx](chapterG-01/G-1.1-xxx.md)
-    * [小结](chapterG-01/END.md)
-* [第二章 持续交付](chapterG-02/README.md)
-    * [2.1 xxxx](chapterG-02/G-2.1-xxx.md)
-    * [小结](chapterG-02/END.md)
+* [第一章 持续集成、交付、部署](chapterG-01-Continuous-Integration/README.md)
+    * [1.1 xxxx](chapterG-01-Continuous-Integration/G-1.1-xxx.md)
+    * [小结](chapterG-01-Continuous-Integration/END.md)
+
+* [第二章 自动化管理工具](chapterG-02-automate-tools/README.md)
+    * [2.1 ansible](chapterG-02-automate-tools/G-2.1-what-is-ansible.md)
+    * [2.2 saltstack](chapterG-02-automate-tools/G-2.1-what-is-saltstack.md)
+    * [小结](chapterG-02--automate-tools/END.md)
 
 # Feedback
 
