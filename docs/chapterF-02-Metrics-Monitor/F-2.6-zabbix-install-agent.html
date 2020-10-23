@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>发行注记 · CloudNative Notes</title>
+        <title>2.6 Zabbix Agent 安装 · CloudNative Notes</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -65,8 +65,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="0.2-contribution.html" />
+    <link rel="next" href="../chapterF-02-Metric/END.md" />
     
+    
+    <link rel="prev" href="F-2.5-zabbix-log-format.html" />
     
 
     </head>
@@ -131,9 +133,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.2.1" data-path="0.1-release.html">
+        <li class="chapter " data-level="1.2.1" data-path="../chapter00/0.1-release.html">
             
-                <a href="0.1-release.html">
+                <a href="../chapter00/0.1-release.html">
             
                     
                     发行注记
@@ -144,9 +146,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="0.2-contribution.html">
+        <li class="chapter " data-level="1.2.2" data-path="../chapter00/0.2-contribution.html">
             
-                <a href="0.2-contribution.html">
+                <a href="../chapter00/0.2-contribution.html">
             
                     
                     贡献指南
@@ -1107,7 +1109,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.2.4" data-path="../chapterF-02-Metrics-Monitor/F-2.4-zabbix-lifecycle.md">
+        <li class="chapter " data-level="7.2.4" data-path="F-2.4-zabbix-lifecycle.md">
             
                 <span>
             
@@ -1120,9 +1122,9 @@
             
         </li>
     
-        <li class="chapter " data-level="7.2.5" data-path="../chapterF-02-Metrics-Monitor/F-2.5-zabbix-log-format.html">
+        <li class="chapter " data-level="7.2.5" data-path="F-2.5-zabbix-log-format.html">
             
-                <a href="../chapterF-02-Metrics-Monitor/F-2.5-zabbix-log-format.html">
+                <a href="F-2.5-zabbix-log-format.html">
             
                     
                     2.5 Zabbix 日志输出格式
@@ -1133,9 +1135,9 @@
             
         </li>
     
-        <li class="chapter " data-level="7.2.6" data-path="../chapterF-02-Metrics-Monitor/F-2.6-zabbix-install-agent.html">
+        <li class="chapter active" data-level="7.2.6" data-path="F-2.6-zabbix-install-agent.html">
             
-                <a href="../chapterF-02-Metrics-Monitor/F-2.6-zabbix-install-agent.html">
+                <a href="F-2.6-zabbix-install-agent.html">
             
                     
                     2.6 Zabbix Agent 安装
@@ -1381,7 +1383,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >发行注记</a>
+        <a href=".." >2.6 Zabbix Agent 安装</a>
     </h1>
 </div>
 
@@ -1396,23 +1398,81 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x53D1;&#x884C;&#x6CE8;&#x8BB0;">&#x53D1;&#x884C;&#x6CE8;&#x8BB0;</h1>
-<h1 id="v021--20201024--&#x8033;&#x4E1C;">v0.2.1 / 2020.10.24 @ &#x8033;&#x4E1C;</h1>
+                                <h1 id="zabbix-agent-&#x5B89;&#x88C5;">Zabbix Agent &#x5B89;&#x88C5;</h1>
+<p>Zabbix Agent &#x662F;&#x8DE8;&#x5E73;&#x53F0;&#x7684;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x5B89;&#x88C5;&#x5728; Linux/Unix &#x7684;&#x4E00;&#x4E9B;&#x53D1;&#x884C;&#x7248;&#x4E0A;&#xFF0C;&#x4EE5;&#x53CA; Windows &#x548C; macOS &#x4E0A;&#xFF0C;&#x6211;&#x4EEC;&#x4ECA;&#x5929;&#x4E3B;&#x8981;&#x6765;&#x770B;&#x4E00;&#x4E0B;&#xFF0C;Linux &#x548C; Windows &#x600E;&#x4E48;&#x8FDB;&#x884C;&#x5B89;&#x88C5;&#x3002;</p>
+<p>Zabbix Agent &#x7684;&#x7248;&#x672C;&#x662F;&#x5411;&#x4E0B;&#x517C;&#x5BB9;&#x7684;&#xFF0C;&#x6BD4;&#x5982; Zabbix Server &#x7248;&#x672C;&#x662F; 4.0 &#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; Zabbix Agent 3.x &#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x80FD;&#x4F7F;&#x7528; Zabbix Agent 5.x &#x3002;</p>
+<h1 id="linux-&#x5B89;&#x88C5;">Linux &#x5B89;&#x88C5;</h1>
+<p>&#x672C;&#x6B21;&#x5B89;&#x88C5;&#x4EE5; Zabbix Agent 5.0 &#x7248;&#x672C;&#x8FDB;&#x884C;&#x5B89;&#x88C5;&#xFF0C;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x662F; CentOS 7.x ,&#x5176;&#x4ED6;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x3002;</p>
+<p>Zabbix Agent &#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x5728;&#x4EFB;&#x610F;&#x7528;&#x6237;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x666E;&#x901A;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x4E0D;&#x53EF;&#x767B;&#x9646;&#x7684;&#x8D26;&#x53F7;&#x6765;&#x8FD0;&#x884C;&#xFF0C;&#x6BD4;&#x5982; zabbix &#x7528;&#x6237;&#x3002;</p>
+<pre><code># groupadd --system zabbix
+# useradd --system -g zabbix -d /usr/lib/zabbix -s /sbin/nologin -c &quot;Zabbix Monitoring System&quot; zabbix
+</code></pre><p>&#x6216;&#x8005;&#x4F7F;&#x7528; root &#x6765;&#x8FD0;&#x884C;&#xFF0C;&#x4F7F;&#x7528; root &#x8FD0;&#x884C; &#x9700;&#x8981;&#x4FEE;&#x6539; zabbix_agent.conf &#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x53C2;&#x6570; <code>AllowRoot=0</code> &#xFF0C;&#x5C06; <code>0</code> &#x4FEE;&#x6539;&#x4E3A; <code>1</code> &#xFF0C;<code>0</code>&#x4EE3;&#x8868;&#x4E0D;&#x5141;&#x8BB8; root &#x8FD0;&#x884C;&#xFF0C;<code>1</code>&#x4EE3;&#x8868;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; root &#x6765;&#x8FD0;&#x884C;&#x3002;</p>
+<p>&#x4F7F;&#x7528; 2 &#x79CD;&#x65B9;&#x5F0F;&#x6765;&#x8FDB;&#x884C;&#x5B89;&#x88C5;&#x5206;&#x522B;&#x662F; RPM &#x5305;&#x548C;&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x3002;</p>
+<h2 id="rpm-&#x5B89;&#x88C5;">RPM &#x5B89;&#x88C5;</h2>
+<p>&#x8FD9;&#x4E2A;&#x662F;&#x6700;&#x7B80;&#x5355;&#x7684;&#xFF0C;2 &#x6B65;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p>
+<p>&#x9996;&#x5148;&#x5B89;&#x88C5; Zabbix &#x7684; yum &#x4ED3;&#x5E93;&#x3002;</p>
+<pre><code># rpm -Uvh https://repo.zabbix.com/zabbix/5.0/rhel/7/x86_64/zabbix-release-5.0-1.el7.noarch.rpm
+# yum clean all
+</code></pre><p>&#x63A5;&#x4E0B;&#x6765;&#x5B89;&#x88C5; Zabbix Agent </p>
+<pre><code># yum install zabbix-agent
+</code></pre><p>&#x5B89;&#x88C5;&#x597D;&#x4EE5;&#x540E;&#x7684; Zabbix &#x4F7F;&#x7528; Systemd &#x8FDB;&#x884C;&#x670D;&#x52A1;&#x7BA1;&#x7406;</p>
+<pre><code>&#x542F;&#x52A8;&#x670D;&#x52A1;
+systemctl start zabbix-agent
+
+&#x505C;&#x6B62;&#x670D;&#x52A1; 
+systemctl stop zabbix-agent
+</code></pre><p>&#x8FD9;&#x6837;&#x5B89;&#x88C5;&#x597D;&#x7684;&#x670D;&#x52A1;&#x6CE8;&#x610F;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x76EE;&#x5F55;&#x5373;&#x53EF;</p>
 <ul>
-<li>&#x4FEE;&#x590D;&#x4E86;&#x76EE;&#x5F55;&#x548C;&#x6587;&#x7AE0;&#x8DF3;&#x8F6C;&#x7684;&#x95EE;&#x9898;</li>
-<li>&#x65B0;&#x589E;&#x4E86; B-1 &#x7AE0;&#x8282;</li>
-<li>&#x65B0;&#x589E;&#x4E86; F-2.5 &#x3001;F-2.6&#x3001;B-1.10</li>
+<li>/usr/lib/systemd/system/zabbix-agent.service systemd &#x7BA1;&#x7406;&#x670D;&#x52A1;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</li>
+<li>/etc/zabbix/zabbix_agentd.conf  Zabbix Agent &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</li>
+<li>/run/zabbix/zabbix_agentd.pid Zabbix Agent Pid &#x6587;&#x4EF6;&#x8DEF;&#x5F84;</li>
+<li>/usr/sbin/zabbix_agentd Zabbix Agent &#x4E8C;&#x8FDB;&#x5236;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</li>
+<li>/var/log/zabbix/zabbix_agentd.log Zabbix Agent &#x65E5;&#x5FD7;&#x8F93;&#x51FA;&#x8DEF;&#x5F84;</li>
 </ul>
-<h1 id="v020--20201017--&#x8033;&#x4E1C;">v0.2.0 / 2020.10.17 @ &#x8033;&#x4E1C;</h1>
-<ul>
-<li>&#x91CD;&#x65B0;&#x8C03;&#x6574;&#x4E86;&#x76EE;&#x5F55;&#x7ED3;&#x6784;</li>
-<li>&#x65B0;&#x589E;&#x4E86; F-02 Metrics Monitor</li>
-<li>&#x65B0;&#x589E;&#x4E86; F-1.2 &#x3001;F-1.3&#x3001;F-1.4 &#x3002;</li>
-</ul>
-<h1 id="v010--20191021--&#x8033;&#x4E1C;">v0.1.0 / 2019.10.21 @ &#x8033;&#x4E1C;</h1>
-<ul>
-<li>&#x521B;&#x5EFA;&#x4ED3;&#x5E93;&#x3002;</li>
-</ul>
+<h2 id="&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x5B89;&#x88C5;">&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x5B89;&#x88C5;</h2>
+<p>&#x5728;&#x5B98;&#x7F51; <a href="https://www.zabbix.com/download_agents" target="_blank">https://www.zabbix.com/download_agents</a> &#x8FD9;&#x91CC;&#x4E0B;&#x8F7D;&#x5BF9;&#x5E94;&#x7248;&#x672C;&#x7684; Agent &#x538B;&#x7F29;&#x5305;&#xFF0C;</p>
+<p>&#x6BD4;&#x5982; <a href="https://www.zabbix.com/downloads/5.0.4/zabbix_agent-5.0.4-linux-3.0-amd64-static.tar.gz" target="_blank">https://www.zabbix.com/downloads/5.0.4/zabbix_agent-5.0.4-linux-3.0-amd64-static.tar.gz</a> &#x4E0B;&#x8F7D; 5.0.4 &#x7684;&#x5B89;&#x88C5;&#x5305;&#x3002;</p>
+<p>&#x9996;&#x5148;&#x89E3;&#x538B;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;</p>
+<pre><code># tar -zxf  zabbix_agent-5.0.4-linux-3.0-amd64-static.tar.gz
+</code></pre><p>&#x4E4B;&#x540E;&#x4F1A;&#x5F97;&#x5230; 3 &#x4E2A;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5206;&#x522B;&#x662F; bin &#x3001;conf&#x3001;sbin , bin &#x76EE;&#x5F55;&#x4E0B;&#x662F; zabbix_get  zabbix_sender &#x8FD9;&#x4E24;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;conf &#x4E0B;&#x8FB9;&#x662F; &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;sbin &#x4E0B;&#x662F; zabbix_agent &#x7684;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x914D;&#x7F6E;&#x4F7F;&#x7528; systemd &#x6765;&#x8FDB;&#x884C;&#x670D;&#x52A1;&#x7BA1;&#x7406;&#xFF0C;&#x7BA1;&#x7406; Zabbix Agent &#x7684;&#x670D;&#x52A1;&#x542F;&#x505C;&#x3002;</p>
+<p>&#x521B;&#x5EFA;&#x670D;&#x52A1;&#x6587;&#x4EF6; /usr/lib/systemd/system/zabbix-agent.service &#xFF0C; &#x5047;&#x5B9A;&#x6211;&#x4EEC;&#x90E8;&#x7F72; Zabbix Agent &#x5728; /erdong/zabbix_agent &#x4E0B;&#xFF0C;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#xFF0C;&#x5176;&#x4E2D; current &#x662F;&#x4E00;&#x4E2A;&#x8F6F;&#x94FE;&#x63A5;&#xFF0C;&#x94FE;&#x63A5;&#x5230; zabbix-agent-5.0.4&#xFF0C;&#x8FD9;&#x6837;&#x65B9;&#x4FBF;&#x4EE5;&#x540E;&#x5347;&#x7EA7;&#xFF0C;&#x5728;&#x5347;&#x7EA7;&#x7684;&#x65F6;&#x5019;&#x53EA;&#x8981;&#x653E;&#x597D;&#x65B0;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x7136;&#x540E;&#x4FEE;&#x6539;&#x8F6F;&#x8FDE;&#x63A5;&#x7684;&#x6307;&#x5411;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p>
+<pre><code>/erdong/zabbix_agent
+    |
+    |-current
+    |-zabbix-agent-5.0.4
+        |- bin
+        |- conf
+        |- sbin
+        |- log
+        |- env
+</code></pre><p>&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x5728; zabbix-agent.service &#x6587;&#x4EF6;&#x91CC;&#x586B;&#x5165;&#x5982;&#x4E0B;&#x5185;&#x5BB9;</p>
+<pre><code>[Unit]
+Description=Zabbix Agent
+After=syslog.target
+After=network.target
+
+[Service]
+Environment=&quot;CONFFILE=/erdong/zabbix_agent/current/zabbix_agentd.conf&quot;
+EnvironmentFile=-/erdong/zabbix_agent/current/env/zabbix-agent
+Type=forking
+Restart=on-failure
+PIDFile=/erdong/zabbix_agent/current/zabbix_agentd.pid
+KillMode=control-group
+ExecStart=/erdong/zabbix_agent/current/sbin/zabbix_agentd -c $CONFFILE
+ExecStop=/bin/kill -SIGTERM $MAINPID
+RestartSec=10s
+User=zabbix
+Group=zabbix
+
+[Install]
+WantedBy=multi-user.target
+</code></pre><p>&#x4FEE;&#x6539;&#x597D;&#x4E0A;&#x8FF0;&#x6587;&#x4EF6;&#x4EE5;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x542F;&#x52A8; Zabbix Agent&#xFF0C;&#x5E76;&#x4E14;&#x8BBE;&#x7F6E; Agent &#x4E3A;&#x5F00;&#x673A;&#x81EA;&#x8D77;&#x3002;</p>
+<pre><code># systemctl start zabbix-agent
+# systemctl enable zabbix-agent
+</code></pre><h1 id="windows-&#x5B89;&#x88C5;">Windows &#x5B89;&#x88C5;</h1>
+<h2 id="&#x4F7F;&#x7528;-msi-&#x8FDB;&#x884C;&#x5B89;&#x88C5;">&#x4F7F;&#x7528; MSI &#x8FDB;&#x884C;&#x5B89;&#x88C5;</h2>
+<h2 id="&#x4F7F;&#x7528;-&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x5B89;&#x88C5;">&#x4F7F;&#x7528; &#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x5B89;&#x88C5;</h2>
 
                                 
                                 </section>
@@ -1440,8 +1500,12 @@
 
             
                 
+                <a href="F-2.5-zabbix-log-format.html" class="navigation navigation-prev " aria-label="Previous page: 2.5 Zabbix 日志输出格式">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="0.2-contribution.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 贡献指南">
+                
+                <a href="../chapterF-02-Metric/END.md" class="navigation navigation-next " aria-label="Next page: 小结">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1452,7 +1516,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"发行注记","level":"1.2.1","depth":2,"next":{"title":"贡献指南","level":"1.2.2","depth":2,"path":"chapter00/0.2-contribution.md","ref":"chapter00/0.2-contribution.md","articles":[]},"previous":{"title":"[前言]","level":"1.2","depth":1,"ref":"","articles":[{"title":"发行注记","level":"1.2.1","depth":2,"path":"chapter00/0.1-release.md","ref":"chapter00/0.1-release.md","articles":[]},{"title":"贡献指南","level":"1.2.2","depth":2,"path":"chapter00/0.2-contribution.md","ref":"chapter00/0.2-contribution.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["pageview-count","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"pageview-count":{},"back-to-top-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Er Dong <erdong@mail.erdong.site>","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CloudNative Notes","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Erdong's Blog":"https://erdong.site"}},"gitbook":"*","description":"This is a note of CloudNative","extension":null},"file":{"path":"chapter00/0.1-release.md","mtime":"2020-10-23T22:57:17.300Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-23T22:57:33.089Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2.6 Zabbix Agent 安装","level":"7.2.6","depth":2,"next":{"title":"小结","level":"7.2.7","depth":2,"path":"chapterF-02-Metric/END.md","ref":"chapterF-02-Metric/END.md","articles":[]},"previous":{"title":"2.5 Zabbix 日志输出格式","level":"7.2.5","depth":2,"path":"chapterF-02-Metrics-Monitor/F-2.5-zabbix-log-format.md","ref":"chapterF-02-Metrics-Monitor/F-2.5-zabbix-log-format.md","articles":[]},"dir":"ltr"},"config":{"plugins":["pageview-count","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"pageview-count":{},"back-to-top-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Er Dong <erdong@mail.erdong.site>","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CloudNative Notes","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Erdong's Blog":"https://erdong.site"}},"gitbook":"*","description":"This is a note of CloudNative","extension":null},"file":{"path":"chapterF-02-Metrics-Monitor/F-2.6-zabbix-install-agent.md","mtime":"2020-10-23T22:57:17.300Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-23T22:57:33.089Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

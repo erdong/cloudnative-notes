@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>发行注记 · CloudNative Notes</title>
+        <title>1.4  Grafana 告警 · CloudNative Notes</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -65,8 +65,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="0.2-contribution.html" />
+    <link rel="next" href="END.html" />
     
+    
+    <link rel="prev" href="F-1.3-panel-clock.html" />
     
 
     </head>
@@ -131,9 +133,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.2.1" data-path="0.1-release.html">
+        <li class="chapter " data-level="1.2.1" data-path="../chapter00/0.1-release.html">
             
-                <a href="0.1-release.html">
+                <a href="../chapter00/0.1-release.html">
             
                     
                     发行注记
@@ -144,9 +146,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="0.2-contribution.html">
+        <li class="chapter " data-level="1.2.2" data-path="../chapter00/0.2-contribution.html">
             
-                <a href="0.2-contribution.html">
+                <a href="../chapter00/0.2-contribution.html">
             
                     
                     贡献指南
@@ -970,9 +972,9 @@
         
         
     
-        <li class="chapter " data-level="7.1" data-path="../chapterF-01-Analytics-Platform/">
+        <li class="chapter " data-level="7.1" data-path="./">
             
-                <a href="../chapterF-01-Analytics-Platform/">
+                <a href="./">
             
                     
                     第一章  数据展示
@@ -984,9 +986,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="7.1.1" data-path="../chapterF-01-Analytics-Platform/F-1.1-what-is-grafana.html">
+        <li class="chapter " data-level="7.1.1" data-path="F-1.1-what-is-grafana.html">
             
-                <a href="../chapterF-01-Analytics-Platform/F-1.1-what-is-grafana.html">
+                <a href="F-1.1-what-is-grafana.html">
             
                     
                     1.1  什么是 Grafana
@@ -997,9 +999,9 @@
             
         </li>
     
-        <li class="chapter " data-level="7.1.2" data-path="../chapterF-01-Analytics-Platform/F-1.2-change-the-default-home-dashboard.html">
+        <li class="chapter " data-level="7.1.2" data-path="F-1.2-change-the-default-home-dashboard.html">
             
-                <a href="../chapterF-01-Analytics-Platform/F-1.2-change-the-default-home-dashboard.html">
+                <a href="F-1.2-change-the-default-home-dashboard.html">
             
                     
                     1.2  定制 Grafana 首页
@@ -1010,9 +1012,9 @@
             
         </li>
     
-        <li class="chapter " data-level="7.1.3" data-path="../chapterF-01-Analytics-Platform/F-1.3-panel-clock.html">
+        <li class="chapter " data-level="7.1.3" data-path="F-1.3-panel-clock.html">
             
-                <a href="../chapterF-01-Analytics-Platform/F-1.3-panel-clock.html">
+                <a href="F-1.3-panel-clock.html">
             
                     
                     1.3  Panel Clock
@@ -1023,9 +1025,9 @@
             
         </li>
     
-        <li class="chapter " data-level="7.1.4" data-path="../chapterF-01-Analytics-Platform/F-1.4-what-is-grafana-alerts.html">
+        <li class="chapter active" data-level="7.1.4" data-path="F-1.4-what-is-grafana-alerts.html">
             
-                <a href="../chapterF-01-Analytics-Platform/F-1.4-what-is-grafana-alerts.html">
+                <a href="F-1.4-what-is-grafana-alerts.html">
             
                     
                     1.4  Grafana 告警
@@ -1036,9 +1038,9 @@
             
         </li>
     
-        <li class="chapter " data-level="7.1.5" data-path="../chapterF-01-Analytics-Platform/END.html">
+        <li class="chapter " data-level="7.1.5" data-path="END.html">
             
-                <a href="../chapterF-01-Analytics-Platform/END.html">
+                <a href="END.html">
             
                     
                     小结
@@ -1381,7 +1383,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >发行注记</a>
+        <a href=".." >1.4  Grafana 告警</a>
     </h1>
 </div>
 
@@ -1396,23 +1398,177 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x53D1;&#x884C;&#x6CE8;&#x8BB0;">&#x53D1;&#x884C;&#x6CE8;&#x8BB0;</h1>
-<h1 id="v021--20201024--&#x8033;&#x4E1C;">v0.2.1 / 2020.10.24 @ &#x8033;&#x4E1C;</h1>
+                                <h1 id="grafana-&#x544A;&#x8B66;&#x603B;&#x89C8;&#x548C;&#x544A;&#x8B66;&#x901A;&#x77E5;">Grafana &#x544A;&#x8B66;&#x603B;&#x89C8;&#x548C;&#x544A;&#x8B66;&#x901A;&#x77E5;</h1>
+<p>&#x544A;&#x8B66;&#x53EF;&#x4EE5;&#x5728;&#x7CFB;&#x7EDF;&#x51FA;&#x73B0;&#x95EE;&#x9898;&#x540E;&#x7ACB;&#x5373;&#x8BC6;&#x522B;&#x95EE;&#x9898;&#x3002;&#x901A;&#x8FC7;&#x5FEB;&#x901F;&#x8BC6;&#x522B;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x610F;&#x5916;&#x66F4;&#x6539;&#xFF0C;&#x53EF;&#x4EE5;&#x6700;&#x5927;&#x9650;&#x5EA6;&#x5730;&#x51CF;&#x5C11;&#x5BF9;&#x670D;&#x52A1;&#x7684;&#x4E2D;&#x65AD;&#x3002;</p>
+<p>&#x544A;&#x8B66;&#x901A;&#x5E38;&#x5206;&#x4E3A;&#x4E24;&#x90E8;&#x5206;&#xFF0C;</p>
 <ul>
-<li>&#x4FEE;&#x590D;&#x4E86;&#x76EE;&#x5F55;&#x548C;&#x6587;&#x7AE0;&#x8DF3;&#x8F6C;&#x7684;&#x95EE;&#x9898;</li>
-<li>&#x65B0;&#x589E;&#x4E86; B-1 &#x7AE0;&#x8282;</li>
-<li>&#x65B0;&#x589E;&#x4E86; F-2.5 &#x3001;F-2.6&#x3001;B-1.10</li>
+<li>&#x544A;&#x8B66;&#x89C4;&#x5219;&#xFF1A;&#x544A;&#x8B66;&#x89C4;&#x5219;&#x662F;&#x7531; Grafana &#x5B9A;&#x671F;&#x8BC4;&#x4F30;&#x7684;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x6761;&#x4EF6;&#x5B9A;&#x4E49;&#x7684;&#x89C4;&#x5219;&#x3002;</li>
+<li>&#x901A;&#x77E5;&#x6E20;&#x9053;&#xFF1A;&#x5F53;&#x544A;&#x8B66;&#x89C4;&#x5219;&#x7684;&#x6761;&#x4EF6;&#x88AB;&#x6EE1;&#x8DB3;&#x65F6;&#xFF0C;Grafana &#x4F1A;&#x901A;&#x77E5;&#x4E3A;&#x8BE5;&#x62A5;&#x8B66;&#x914D;&#x7F6E;&#x7684;&#x901A;&#x77E5;&#x6E20;&#x9053;&#x3002;</li>
 </ul>
-<h1 id="v020--20201017--&#x8033;&#x4E1C;">v0.2.0 / 2020.10.17 @ &#x8033;&#x4E1C;</h1>
-<ul>
-<li>&#x91CD;&#x65B0;&#x8C03;&#x6574;&#x4E86;&#x76EE;&#x5F55;&#x7ED3;&#x6784;</li>
-<li>&#x65B0;&#x589E;&#x4E86; F-02 Metrics Monitor</li>
-<li>&#x65B0;&#x589E;&#x4E86; F-1.2 &#x3001;F-1.3&#x3001;F-1.4 &#x3002;</li>
-</ul>
-<h1 id="v010--20191021--&#x8033;&#x4E1C;">v0.1.0 / 2019.10.21 @ &#x8033;&#x4E1C;</h1>
-<ul>
-<li>&#x521B;&#x5EFA;&#x4ED3;&#x5E93;&#x3002;</li>
-</ul>
+<p>Grafana &#x7684;&#x544A;&#x8B66;&#x89C4;&#x5219;&#x53EA;&#x80FD;&#x5728; Graph Panel &#x91CC;&#x8FDB;&#x884C;&#x914D;&#x7F6E;&#xFF0C;&#x4E0D;&#x652F;&#x6301;&#x5176;&#x4ED6;&#x7684; Panel &#x7C7B;&#x578B;&#x3002;</p>
+<h1 id="&#x544A;&#x8B66;&#x6267;&#x884C;">&#x544A;&#x8B66;&#x6267;&#x884C;</h1>
+<p>&#x544A;&#x8B66;&#x89C4;&#x5219;&#x5728; Grafana &#x7684;&#x540E;&#x7AEF;&#x6267;&#x884C;&#xFF0C;&#x76EE;&#x524D;&#xFF08;v7.2&#xFF09;&#x53EA;&#x652F;&#x6301;&#x4E00;&#x90E8;&#x5206;&#x7684;&#x6570;&#x636E;&#x6E90;&#xFF0C; &#x5305;&#x62EC; Graphite, Prometheus, InfluxDB, Elasticsearch, Google Cloud Monitoring, Cloudwatch, Azure Monitor, MySQL, PostgreSQL, MSSQL, OpenTSDB, Oracle, and Azure Data Explorer.</p>
+<p>&#x6682;&#x65F6;&#x4E0D;&#x652F;&#x6301; Zabbix &#x3001;CMS Grafana Service &#x7B49;&#x6570;&#x636E;&#x6E90;&#x3002;</p>
+<h1 id="&#x544A;&#x8B66;&#x5F15;&#x64CE;&#x7684;&#x6307;&#x6807;">&#x544A;&#x8B66;&#x5F15;&#x64CE;&#x7684;&#x6307;&#x6807;</h1>
+<p>&#x544A;&#x8B66;&#x5F15;&#x64CE;&#x53D1;&#x5E03;&#x4E00;&#x4E9B;&#x5173;&#x4E8E;&#x81EA;&#x8EAB;&#x7684;&#x5185;&#x90E8;&#x6307;&#x6807;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x9605;&#x8BFB;&#x66F4;&#x591A;&#x5173;&#x4E8E;Grafana&#x5982;&#x4F55;&#x53D1;&#x5E03;&#x5185;&#x90E8;&#x6307;&#x6807;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>Type</th>
+<th>Metric name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Total number of alerts</td>
+<td>counter</td>
+<td>alerting.active_alerts</td>
+</tr>
+<tr>
+<td>Alert execution result</td>
+<td>counter</td>
+<td>alerting.result</td>
+</tr>
+<tr>
+<td>Notifications sent counter</td>
+<td>counter</td>
+<td>alerting.notifications_sent</td>
+</tr>
+<tr>
+<td>Alert execution timer</td>
+<td>timer</td>
+<td>alerting.execution_time</td>
+</tr>
+</tbody>
+</table>
+<h1 id="&#x652F;&#x6301;&#x7684;&#x901A;&#x77E5;&#x7EC4;&#x4EF6;&#x5217;&#x8868;">&#x652F;&#x6301;&#x7684;&#x901A;&#x77E5;&#x7EC4;&#x4EF6;&#x5217;&#x8868;</h1>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Supports images</th>
+<th>Support alert rule tags</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DingDing</td>
+<td>dingding</td>
+<td>yes, external only</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Discord</td>
+<td>discord</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>email</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Google Hangouts Chat</td>
+<td>googlechat</td>
+<td>yes, external only</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Hipchat</td>
+<td>hipchat</td>
+<td>yes, external only</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Kafka</td>
+<td>kafka</td>
+<td>yes, external only</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Line</td>
+<td>line</td>
+<td>yes, external only</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Microsoft Teams</td>
+<td>teams</td>
+<td>yes, external only</td>
+<td>no</td>
+</tr>
+<tr>
+<td>OpsGenie</td>
+<td>opsgenie</td>
+<td>yes, external only</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Pagerduty</td>
+<td>pagerduty</td>
+<td>yes, external only</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Prometheus Alertmanager</td>
+<td>prometheus-alertmanager</td>
+<td>yes, external only</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Pushover</td>
+<td>pushover</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Sensu</td>
+<td>sensu</td>
+<td>yes, external only</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Slack</td>
+<td>slack</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Telegram</td>
+<td>telegram</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Threema</td>
+<td>threema</td>
+<td>yes, external only</td>
+<td>no</td>
+</tr>
+<tr>
+<td>VictorOps</td>
+<td>victorops</td>
+<td>yes, external only</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Webhook</td>
+<td>webhook</td>
+<td>yes, external only</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Zenduty</td>
+<td>webhook</td>
+<td>yes, external only</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
 
                                 
                                 </section>
@@ -1440,8 +1596,12 @@
 
             
                 
+                <a href="F-1.3-panel-clock.html" class="navigation navigation-prev " aria-label="Previous page: 1.3  Panel Clock">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="0.2-contribution.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 贡献指南">
+                
+                <a href="END.html" class="navigation navigation-next " aria-label="Next page: 小结">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1452,7 +1612,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"发行注记","level":"1.2.1","depth":2,"next":{"title":"贡献指南","level":"1.2.2","depth":2,"path":"chapter00/0.2-contribution.md","ref":"chapter00/0.2-contribution.md","articles":[]},"previous":{"title":"[前言]","level":"1.2","depth":1,"ref":"","articles":[{"title":"发行注记","level":"1.2.1","depth":2,"path":"chapter00/0.1-release.md","ref":"chapter00/0.1-release.md","articles":[]},{"title":"贡献指南","level":"1.2.2","depth":2,"path":"chapter00/0.2-contribution.md","ref":"chapter00/0.2-contribution.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["pageview-count","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"pageview-count":{},"back-to-top-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Er Dong <erdong@mail.erdong.site>","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CloudNative Notes","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Erdong's Blog":"https://erdong.site"}},"gitbook":"*","description":"This is a note of CloudNative","extension":null},"file":{"path":"chapter00/0.1-release.md","mtime":"2020-10-23T22:57:17.300Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-23T22:57:33.089Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.4  Grafana 告警","level":"7.1.4","depth":2,"next":{"title":"小结","level":"7.1.5","depth":2,"path":"chapterF-01-Analytics-Platform/END.md","ref":"chapterF-01-Analytics-Platform/END.md","articles":[]},"previous":{"title":"1.3  Panel Clock","level":"7.1.3","depth":2,"path":"chapterF-01-Analytics-Platform/F-1.3-panel-clock.md","ref":"chapterF-01-Analytics-Platform/F-1.3-panel-clock.md","articles":[]},"dir":"ltr"},"config":{"plugins":["pageview-count","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"pageview-count":{},"back-to-top-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Er Dong <erdong@mail.erdong.site>","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CloudNative Notes","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Erdong's Blog":"https://erdong.site"}},"gitbook":"*","description":"This is a note of CloudNative","extension":null},"file":{"path":"chapterF-01-Analytics-Platform/F-1.4-what-is-grafana-alerts.md","mtime":"2020-10-18T12:59:35.291Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-23T22:57:33.089Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
