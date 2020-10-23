@@ -95,7 +95,7 @@
     * [2.1 Prometheus](chapterF-02-Metrics-Monitor/F-2.1-prometheus.md)
     * [2.2 Zabbix 介绍](chapterF-02-Metrics-Monitor/F-2.2-zabbix-introduction.md)
     * [2.3 Zabbix 安装](chapterF-02-Metrics-Monitor/F-2.3-zabbix-install.md)
-    * [2.4 Zabbix 产品发布周期](chapterF-02-Metrics-Monitor/F-2.4-zabbix-lifecycle.md)
+    * [2.4 Zabbix 产品发布周期](chapterF-02-Metrics-Monitor/F-2.4-zabbix-life-cycle.md)
     * [2.5 Zabbix 日志输出格式](chapterF-02-Metrics-Monitor/F-2.5-zabbix-log-format.md)
     * [2.6 Zabbix Agent 安装](chapterF-02-Metrics-Monitor/F-2.6-zabbix-install-agent.md)
     * [小结](chapterF-02-Metric-Monitor/END.md)
