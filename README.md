@@ -37,37 +37,38 @@
 ### Part ⅠⅠ 操作系统
 
 * [第一章 Linux 系统](chapterB-01-Linux/README.md)
-    * [4.1 xxxx](chapterB-01-Linux/B-1.1-xxx.md)
-    * [4.10 Linux 下的服务管理](chapterB-01-Linux/B-1.10-service-manager.md)
+    * [1.1 xxxx](chapterB-01-Linux/B-1.1-xxx.md)
+    * [1.10 Linux 下的服务管理](chapterB-01-Linux/B-1.10-service-manager.md)
+    * [1.11 隐藏 Nginx 版本](chapterB-01-Linux/B-1.11-hide-nginx-version.md)
     * [小结](chapterB-01-Linux/END.md)
 
 * [第二章  Windows 系统](chapterB-02-Windows/README.md)
-    * [5.1 xxxx](chapterB-02-Windows/B-2.1-xxx.md)
+    * [2.1 xxxx](chapterB-02-Windows/B-2.1-xxx.md)
     * [小结](chapterB-02-Windows/END.md)
 
 
 ### Part ⅠⅠⅠ 网络
 
 * [第一章 xxx](chapterC-01/README.md)
-    * [4.1 xxxx](chapterC-01/C-1.1-xxx.md)
+    * [1.1 xxxx](chapterC-01/C-1.1-xxx.md)
     * [小结](chapterC-01/END.md)
 
 * [第二章  xxxx](chapterC-02/README.md)
-    * [5.1 xxxx](chapterC-02/C-2.1-xxx.md)
+    * [2.1 xxxx](chapterC-02/C-2.1-xxx.md)
     * [小结](chapterC-02/END.md)
 
 ### Part IV 存储
 
 * [第一章 Lustre ](chapterD-01-Lustre/README.md)
-    * [4.1 xxxx](chapterD-01-Lustre/D-1.1-what-is-lustre.md)
+    * [1.1 xxxx](chapterD-01-Lustre/D-1.1-what-is-lustre.md)
     * [小结](chapterD-01-Lustre/END.md)
 
 * [第二章  Minio ](chapterD-02-Minio/README.md)
-    * [5.1 xxxx](chapterD-02-Minio/D-2.1-what-is-minio.md)
+    * [2.1 xxxx](chapterD-02-Minio/D-2.1-what-is-minio.md)
     * [小结](chapterD-02-Minio/END.md)
 
 * [第三章  Ceph ](chapterD-03-Ceph/README.md)
-    * [5.1 xxxx](chapterD-03-Ceph/D-3.1-what-is-ceph.md)
+    * [3.1 xxxx](chapterD-03-Ceph/D-3.1-what-is-ceph.md)
     * [小结](chapterD-03-Ceph/END.md)
 
 ### Part V 容器和容器编排
@@ -87,6 +88,7 @@
 
 * [第四章 容器编排 Kubernetes](chapterE-04-Kubernetes/README.md)
     * [4.1 Kubernetes](chapterE-04-Kubernetes/E-4.1-what-is-kubernetes.md)
+    * [4.2 Rancher](chapterE-04-Kubernetes/E-4.2-what-is-rancher.md)
     * [小结](chapterE-04-Kubernetes/END.md)
 
 * [第五章 容器编排 Swarm ](chapterE-05-Swarm/README.md)
@@ -129,9 +131,9 @@
     * [小结](chapterG-02--automate-tools/END.md)
 
 * [第三章  Markdown](chapterG-03-Markdown/README.md)
-    * [2.1 Markdown](chapterG-03-Markdown/G-3.1-what-is-markdown.md)
-    * [2.2 Markdown 基础语法](chapterG-03-Markdown/G-3.2-markdown-basic.md)
-    * [2.3 Markdown 折叠语法](chapterG-03-Markdown/G-3.3-folding-doc.md)
+    * [3.1 Markdown](chapterG-03-Markdown/G-3.1-what-is-markdown.md)
+    * [3.2 Markdown 基础语法](chapterG-03-Markdown/G-3.2-markdown-basic.md)
+    * [3.3 Markdown 折叠语法](chapterG-03-Markdown/G-3.3-folding-doc.md)
     * [小结](chapterG-03-Markdown/END.md) 
 
 # Feedback
