@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>小结 · CloudNative Notes</title>
+        <title>1.11 隐藏 Nginx 版本信息 · CloudNative Notes</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -65,10 +65,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../chapterA-03/README.md" />
+    <link rel="next" href="END.html" />
     
     
-    <link rel="prev" href="A-2.3-xxx.md" />
+    <link rel="prev" href="B-1.10-service-manager.html" />
     
 
     </head>
@@ -242,9 +242,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2" data-path="./">
+        <li class="chapter " data-level="2.2" data-path="../chapterA-02-Arrangement/">
             
-                <a href="./">
+                <a href="../chapterA-02-Arrangement/">
             
                     
                     第二章 应用编排与管理
@@ -256,7 +256,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.2.1" data-path="A-2.1-xxx.md">
+        <li class="chapter " data-level="2.2.1" data-path="../chapterA-02-Arrangement/A-2.1-xxx.md">
             
                 <span>
             
@@ -269,7 +269,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.2" data-path="A-2.2-xxx.md">
+        <li class="chapter " data-level="2.2.2" data-path="../chapterA-02-Arrangement/A-2.2-xxx.md">
             
                 <span>
             
@@ -282,7 +282,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.3" data-path="A-2.3-xxx.md">
+        <li class="chapter " data-level="2.2.3" data-path="../chapterA-02-Arrangement/A-2.3-xxx.md">
             
                 <span>
             
@@ -295,9 +295,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.2.4" data-path="END.html">
+        <li class="chapter " data-level="2.2.4" data-path="../chapterA-02-Arrangement/END.html">
             
-                <a href="END.html">
+                <a href="../chapterA-02-Arrangement/END.html">
             
                     
                     小结
@@ -391,9 +391,9 @@
         
         
     
-        <li class="chapter " data-level="3.1" data-path="../chapterB-01-Linux/">
+        <li class="chapter " data-level="3.1" data-path="./">
             
-                <a href="../chapterB-01-Linux/">
+                <a href="./">
             
                     
                     第一章 Linux 系统
@@ -405,9 +405,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.1.1" data-path="../chapterB-01-Linux/B-1.10-service-manager.html">
+        <li class="chapter " data-level="3.1.1" data-path="B-1.10-service-manager.html">
             
-                <a href="../chapterB-01-Linux/B-1.10-service-manager.html">
+                <a href="B-1.10-service-manager.html">
             
                     
                     1.10 服务管理
@@ -418,9 +418,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.2" data-path="../chapterB-01-Linux/B-1.11-hide-nginx-version.html">
+        <li class="chapter active" data-level="3.1.2" data-path="B-1.11-hide-nginx-version.html">
             
-                <a href="../chapterB-01-Linux/B-1.11-hide-nginx-version.html">
+                <a href="B-1.11-hide-nginx-version.html">
             
                     
                     1.11 隐藏 Nginx 版本信息
@@ -431,9 +431,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.3" data-path="../chapterB-01-Linux/END.html">
+        <li class="chapter " data-level="3.1.3" data-path="END.html">
             
-                <a href="../chapterB-01-Linux/END.html">
+                <a href="END.html">
             
                     
                     小结
@@ -1480,7 +1480,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >小结</a>
+        <a href=".." >1.11 隐藏 Nginx 版本信息</a>
     </h1>
 </div>
 
@@ -1495,9 +1495,71 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x5C0F;&#x7ED3;">&#x5C0F;&#x7ED3;</h1>
-<p>&#x672C;&#x7AE0;&#x4E3B;&#x8981;&#x8BB2;&#x4E86; XXXXX</p>
+                                <h1 id="&#x9690;&#x85CF;-nginx-&#x7248;&#x672C;&#x53F7;">&#x9690;&#x85CF; Nginx &#x7248;&#x672C;&#x53F7;</h1>
+<p>Nginx &#x7684; &#x7248;&#x672C;&#x53F7;&#x66B4;&#x9732;&#x5728;&#x7F51;&#x7EDC;&#x4E0A;&#x5076;&#x5C14;&#x4F1A;&#x6709;&#x4E0D;&#x5B89;&#x5168;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x6BD4;&#x5982;&#x67D0;&#x4E2A;&#x7248;&#x672C;&#x88AB;&#x4EBA;&#x53D1;&#x73B0;&#x6F0F;&#x6D1E;&#x4EE5;&#x540E;&#xFF0C;&#x4F1A;&#x88AB;&#x9ED1;&#x5BA2;&#x901A;&#x8FC7;&#x7248;&#x672C;&#x626B;&#x63CF;&#x6765;&#x653B;&#x51FB;&#x3002;&#x6240;&#x4EE5;&#x6700;&#x597D;&#x628A; Nginx &#x7684;&#x7248;&#x672C;&#x597D;&#x9690;&#x85CF;&#x8D77;&#x6765;&#x3002;</p>
+<h1 id="&#x9690;&#x85CF;&#x7248;&#x672C;&#x53F7;">&#x9690;&#x85CF;&#x7248;&#x672C;&#x53F7;</h1>
+<p>[root@localhost init.d]# curl -I <a href="http://192.168.13.140/" target="_blank">http://192.168.13.140/</a>  ##&#x67E5;&#x770B;Nginx&#x4FE1;&#x606F;
+HTTP/1.1 200 OK
+Server: nginx/1.12.2  ##&#x663E;&#x793A;&#x7248;&#x672C;&#x53F7;
+Date: Tue, 12 Nov 2019 14:23:24 GMT
+Content-Type: text/html
+Content-Length: 612
+Last-Modified: Tue, 12 Nov 2019 13:46:35 GMT
+Connection: keep-alive
+ETag: &quot;5dcab7bb-264&quot;
+Accept-Ranges: bytes
+[root@localhost init.d]# vim /usr/local/nginx/conf/nginx.conf ##&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</p>
+<p>http {      ##&#x5728;http&#x4E0B;&#x6DFB;&#x52A0;
+    include    mime.types;
+    default_type application/octet-stream;
+    server_tokens off;  ##&#x5173;&#x95ED;&#x7248;&#x672C;&#x53F7;</p>
+<p>[root@localhost init.d]# service nginx stop ##&#x5173;&#x95ED;&#x670D;&#x52A1;
+[root@localhost init.d]# service nginx start ##&#x5F00;&#x542F;&#x670D;&#x52A1;
+[root@localhost init.d]# curl -I <a href="http://192.168.13.140/" target="_blank">http://192.168.13.140/</a> ##&#x67E5;&#x770B;Nginx&#x4FE1;&#x606F;
+HTTP/1.1 200 OK<br>Server: nginx      ##&#x7248;&#x672C;&#x53F7;&#x88AB;&#x9690;&#x85CF;
+Date: Tue, 12 Nov 2019 14:22:00 GMT
+Content-Type: text/html
+Content-Length: 612
+Last-Modified: Tue, 12 Nov 2019 13:46:35 GMT
+Connection: keep-alive
+ETag: &quot;5dcab7bb-264&quot;
+Accept-Ranges: bytes</p>
+<h1 id="&#x4F2A;&#x9020;&#x7248;&#x672C;&#x53F7;">&#x4F2A;&#x9020;&#x7248;&#x672C;&#x53F7;</h1>
+<p>1&#xFF0C;&#x5F00;&#x542F;&#x7248;&#x672C;&#x53F7;</p>
+<pre><code>[root@localhost init.d]# vim /usr/local/nginx/conf/nginx.conf
+http {
+    include    mime.types;
+    default_type application/octet-stream;
+    server_tokens on;  ##&#x5F00;&#x542F;&#x7248;&#x672C;&#x53F7;
+</code></pre><p>2&#xFF0C;&#x4FEE;&#x6539;Nginx&#x6E90;&#x7801;&#x5305;&#x6587;&#x4EF6;</p>
+<pre><code>[root@localhost init.d]# cd /opt/nginx-1.12.2/src/core/ ##&#x5207;&#x6362;&#x5230;src&#x6E90;&#x7801;&#x5305;&#x76EE;&#x5F55;
+[root@localhost core]# vim nginx.h ##&#x4FEE;&#x6539;&#x6587;&#x4EF6;
 
+#define NGINX_VERSION   &quot;1.1.1&quot; ##&#x6B64;&#x5904;&#x7248;&#x672C;&#x53F7;&#x4F2A;&#x9020;&#x6210;1.1.1
+</code></pre><p>3&#xFF0C;&#x91CD;&#x65B0;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;</p>
+<pre><code>[root@localhost core]# cd /opt/nginx-1.12.2/  ##&#x5207;&#x6362;&#x76EE;&#x5F55;&#x5230;Nginx&#x4E0B;
+[root@localhost nginx-1.12.2]# ./configure \   ##&#x91CD;&#x65B0;&#x914D;&#x7F6E;
+&gt; --prefix=/usr/local/nginx \
+&gt; --user=nginx \
+&gt; --group=nginx \
+&gt; --with-http_stub_status_module
+[root@localhost nginx-1.12.0]# make   ##&#x91CD;&#x65B0;&#x7F16;&#x8BD1;
+...
+[root@localhost nginx-1.12.0]# make install  ##&#x91CD;&#x65B0;&#x5B89;&#x88C5;
+...
+</code></pre><p>4&#xFF0C;&#x91CD;&#x542F;Nginx&#x670D;&#x52A1;&#xFF0C;&#x67E5;&#x770B;&#x7248;&#x672C;&#x4FE1;&#x606F;</p>
+<pre><code>[root@localhost nginx-1.12.2]# service nginx stop ##&#x5173;&#x95ED;
+[root@localhost nginx-1.12.2]# service nginx start ##&#x5F00;&#x542F;
+[root@localhost nginx-1.12.2]# curl -I http://192.168.13.140/  ##&#x67E5;&#x770B;Nginx&#x4FE1;&#x606F;
+HTTP/1.1 200 OK 
+Server: nginx/1.1.1    ##&#x6B64;&#x65F6;&#x7684;&#x7248;&#x672C;&#x53F7;&#x5C31;&#x662F;&#x4F2A;&#x9020;&#x7684;&#x7248;&#x672C;&#x53F7;
+Date: Tue, 12 Nov 2019 14:34:02 GMT
+Content-Type: text/html
+Content-Length: 612
+Last-Modified: Tue, 12 Nov 2019 13:46:35 GMT
+Connection: keep-alive
+ETag: &quot;5dcab7bb-264&quot;
+</code></pre>
                                 
                                 </section>
                             
@@ -1524,12 +1586,12 @@
 
             
                 
-                <a href="A-2.3-xxx.md" class="navigation navigation-prev " aria-label="Previous page: 2.3 xxxx">
+                <a href="B-1.10-service-manager.html" class="navigation navigation-prev " aria-label="Previous page: 1.10 服务管理">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../chapterA-03/README.md" class="navigation navigation-next " aria-label="Next page: 第三章 xxxx">
+                <a href="END.html" class="navigation navigation-next " aria-label="Next page: 小结">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1540,7 +1602,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"小结","level":"2.2.4","depth":2,"next":{"title":"第三章 xxxx","level":"2.3","depth":1,"path":"chapterA-03/README.md","ref":"chapterA-03/README.md","articles":[{"title":"3.1 xxxx","level":"2.3.1","depth":2,"path":"chapterA-03/A-3.1-xxx.md","ref":"chapterA-03/A-3.1-xxx.md","articles":[]},{"title":"3.2 xxxx","level":"2.3.2","depth":2,"path":"chapterA-03/A-3.2-xxx.md","ref":"chapterA-03/A-3.2-xxx.md","articles":[]},{"title":"3.3 xxxx","level":"2.3.3","depth":2,"path":"chapterA-03/A-3.3-xxx.md","ref":"chapterA-03/A-3.3-xxx.md","articles":[]},{"title":"小结","level":"2.3.4","depth":2,"path":"chapterA-03/END.md","ref":"chapterA-03/END.md","articles":[]}]},"previous":{"title":"2.3 xxxx","level":"2.2.3","depth":2,"path":"chapterA-02-Arrangement/A-2.3-xxx.md","ref":"chapterA-02-Arrangement/A-2.3-xxx.md","articles":[]},"dir":"ltr"},"config":{"plugins":["pageview-count","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"pageview-count":{},"back-to-top-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Er Dong <erdong@mail.erdong.site>","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CloudNative Notes","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Erdong's Blog":"https://erdong.site"}},"gitbook":"*","description":"This is a note of CloudNative","extension":null},"file":{"path":"chapterA-02-Arrangement/END.md","mtime":"2020-11-01T14:10:53.114Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-13T14:52:12.059Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.11 隐藏 Nginx 版本信息","level":"3.1.2","depth":2,"next":{"title":"小结","level":"3.1.3","depth":2,"path":"chapterB-01-Linux/END.md","ref":"chapterB-01-Linux/END.md","articles":[]},"previous":{"title":"1.10 服务管理","level":"3.1.1","depth":2,"path":"chapterB-01-Linux/B-1.10-service-manager.md","ref":"chapterB-01-Linux/B-1.10-service-manager.md","articles":[]},"dir":"ltr"},"config":{"plugins":["pageview-count","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"pageview-count":{},"back-to-top-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Er Dong <erdong@mail.erdong.site>","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CloudNative Notes","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Erdong's Blog":"https://erdong.site"}},"gitbook":"*","description":"This is a note of CloudNative","extension":null},"file":{"path":"chapterB-01-Linux/B-1.11-hide-nginx-version.md","mtime":"2020-11-01T14:10:53.114Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-13T14:52:12.059Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
