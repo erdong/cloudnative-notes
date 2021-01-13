@@ -2,7 +2,7 @@
 
 第二章主要讲解了 XXXX
 
-    * [2.1 xxxx](chapter02/2.1-xxx.md)
-    * [2.2 xxxx](chapter02/2.2-xxx.md)
-    * [2.3 xxxx](chapter02/2.3-xxx.md)
-    * [小结](chapter02/END.md)
+* [2.1 xxxx](chapterA-02-Arrangemment/2.1-xxx.md)
+* [2.2 xxxx](chapterA-02-Arrangemment/2.2-xxx.md)
+* [2.3 xxxx](chapterA-02-Arrangemment/2.3-xxx.md)
+* [小结](chapterA-02-Arrangemment/END.md)
