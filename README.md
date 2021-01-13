@@ -17,102 +17,72 @@
 ### Part Ⅰ 基础篇
 
 * [第一章 云原生基础](chapterA-01-Basic/README.md)  【3 篇/Doing】
-    * [小结](chapterA-01-Basic/END.md)
+
 
 * [第二章 应用编排与管理](chapterA-02-Arrangement/README.md)  【0 篇/Todo】
 
-    * [小结](chapterA-02-Arrangement/END.md)
-
 * [第三章 xxxx](chapterA-03/README.md)
 
-    * [小结](chapterA-03/END.md)
+
 
 ### Part ⅠⅠ 操作系统
 
 * [第一章 Linux 系统](chapterB-01-Linux/README.md)
 
-    * [小结](chapterB-01-Linux/END.md)
-
 * [第二章  Windows 系统](chapterB-02-Windows/README.md)
 
-    * [小结](chapterB-02-Windows/END.md)
 
 
 ### Part ⅠⅠⅠ 网络
 
 * [第一章 xxx](chapterC-01/README.md)
 
-    * [小结](chapterC-01/END.md)
-
 * [第二章  xxxx](chapterC-02/README.md)
-
-    * [小结](chapterC-02/END.md)
 
 ### Part IV 存储
 
 * [第一章 Lustre ](chapterD-01-Lustre/README.md)
 
-    * [小结](chapterD-01-Lustre/END.md)
-
 * [第二章  Minio ](chapterD-02-Minio/README.md)
-
-    * [小结](chapterD-02-Minio/END.md)
 
 * [第三章  Ceph ](chapterD-03-Ceph/README.md)
 
-    * [小结](chapterD-03-Ceph/END.md)
 
 ### Part V 容器和容器编排
 
 * [第一章 容器](chapterE-01-Container/README.md)
 
-    * [小结](chapterE-01-Container/END.md)
-
 * [第二章 容器仓库](chapterE-02-Repository/README.md)
-
-    * [小结](chapterE-02-Repository/END.md)
 
 * [第三章 容器编排 Docker Compose](chapterE-03-Compose/README.md)
 
-    * [小结](chapterE-03-Compose/END.md)
-
 * [第四章 容器编排 Kubernetes](chapterE-04-Kubernetes/README.md)
 
-    * [小结](chapterE-04-Kubernetes/END.md)
-
 * [第五章 容器编排 Swarm ](chapterE-05-Swarm/README.md)
-
-    * [小结](chapterE-05-Swarm/END.md)
 
 ### Part VI 可观察性 (OBSERVABILITY)
 
 * [第一章  数据展示](chapterF-01-Analytics-Platform/README.md)
 
-    * [小结](chapterF-01-Analytics-Platform/END.md)
-
 * [第二章 指标监控](chapterF-02-Metrics-Monitor/README.md)
 
-    * [小结](chapterF-02-Metric-Monitor/END.md)
 * [第三章 日志监控](chapterF-03-Logs-Monitor/README.md)
 
-    * [小结](chapterF-03-Logs-Monitor/END.md)
 * [第四章  APM](chapterF-04-APM/README.md)
-    * [4.1 xxxx](chapterF-04-APM/F-4.1-xxx.md)
-    * [小结](chapterF-04-APM/END.md)
 
 
 ### Part VII SRE
 * [第一章 持续集成、交付、部署](chapterG-01-Continuous-Integration/README.md)
 
-    * [小结](chapterG-01-Continuous-Integration/END.md)
+
 
 * [第二章 自动化管理工具](chapterG-02-automate-tools/README.md)
 
-    * [小结](chapterG-02--automate-tools/END.md)
+
 
 * [第三章  Markdown](chapterG-03-Markdown/README.md)
 
-    * [小结](chapterG-03-Markdown/END.md) 
+
 
 # Feedback
 
