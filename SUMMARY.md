@@ -91,6 +91,10 @@
     * [1.2  定制 Grafana 首页](chapterF-01-Analytics-Platform/F-1.2-change-the-default-home-dashboard.md)
     * [1.3  Panel Clock](chapterF-01-Analytics-Platform/F-1.3-panel-clock.md)
     * [1.4  Grafana 告警](chapterF-01-Analytics-Platform/F-1.4-what-is-grafana-alerts.md)
+    * [1.5  Grafana  正则](chapterF-01-Analytics-Platform/F-1.5-grafana-regex.md)
+    * [1.6  Panel Graph](chapterF-01-Analytics-Platform/F-1.6-panel-graph.md)
+    * [1.7  Panel Stat](chapterF-01-Analytics-Platform/F-1.7-panel-stat.md)
+    * [1.8  Panel Gauge](chapterF-01-Analytics-Platform/F-1.8-panel-gauge.md)
     * [小结](chapterF-01-Analytics-Platform/END.md)
 
 * [第二章 指标监控](chapterF-02-Metrics-Monitor/README.md)
