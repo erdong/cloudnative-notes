@@ -29,6 +29,9 @@
 ### Part ⅠⅠ 操作系统
 
 * [第一章 Linux 系统](chapterB-01-Linux/README.md)
+    * [1.1 Linux 是什么](chapterB-01-Linux/B-1.1-what-is-linux.md)
+    * [1.2  Lost Found 目录](chapterB-01-Linux/B-1.2-lost-found-dir.md)
+    * [1.3  date 命令](chapterB-01-Linux/B-1.3-shell-date.md)
     * [1.10 服务管理](chapterB-01-Linux/B-1.10-service-manager.md)
     * [1.11 隐藏 Nginx 版本信息](chapterB-01-Linux/B-1.11-hide-nginx-version.md)
     * [小结](chapterB-01-Linux/END.md)
@@ -77,7 +80,9 @@
     * [小结](chapterE-03-Compose/END.md)
 
 * [第四章 容器编排 Kubernetes](chapterE-04-Kubernetes/README.md)
-    * [4.1 xxxx](chapterE-04-Kubernetes/E-4.1-xxx.md)
+    * [4.1 Kubernetes](chapterE-04-Kubernetes/E-4.1-what-is-kubernetes.md)
+    * [4.2 Pod 的生命周期](chapterE-04-Kubernetes/E-4.2-pod-lifecycle.md)
+    * [4.3 容器的生命周期](chapterE-04-Kubernetes/E-4.3-containter-lifecycle.md)
     * [小结](chapterE-04-Kubernetes/END.md)
 
 * [第五章 容器编排 Swarm ](chapterE-05-Swarm/README.md)
@@ -104,6 +109,8 @@
     * [2.4 Zabbix 产品发布周期](chapterF-02-Metrics-Monitor/F-2.4-zabbix-life-cycle.md)
     * [2.5 Zabbix 日志输出格式](chapterF-02-Metrics-Monitor/F-2.5-zabbix-log-format.md)
     * [2.6 Zabbix Agent 安装](chapterF-02-Metrics-Monitor/F-2.6-zabbix-install-agent.md)
+    * [2.13 Zabbix 问题集锦（一）](chapterF-02-Metrics-Monitor/F-2.13-zabbix-problem-stes-1.md)
+    * [2.14 Zabbix 问题集锦（二）](chapterF-02-Metrics-Monitor/F-2.14-zabbix-problem-stes-2.md)
     * [小结](chapterF-02-Metric-Monitor/END.md)
 
 * [第三章 日志监控](chapterF-03-Logs/README.md)
@@ -121,8 +128,10 @@
     * [小结](chapterG-01-Continuous-Integration/END.md)
 
 * [第二章 自动化管理工具](chapterG-02-automate-tools/README.md)
-    * [2.1 ansible](chapterG-02-automate-tools/G-2.1-what-is-ansible.md)
-    * [2.2 saltstack](chapterG-02-automate-tools/G-2.1-what-is-saltstack.md)
+    * [2.1 Ansible](chapterG-02-automate-tools/G-2.1-what-is-ansible.md)
+    * [2.2 SaltStack](chapterG-02-automate-tools/G-2.1-what-is-saltstack.md)
+    * [2.13 SaltStack 问题集锦（一）](chapterG-02-automate-tools/G-2.13-salt-problem-sets-1.md)
+    * [2.14 SaltStack 问题集锦（二）](chapterG-02-automate-tools/G-2.14-salt-problem-sets-2.md)
     * [小结](chapterG-02--automate-tools/END.md)
 
 * [第三章  Markdown](chapterG-03-Markdown/README.md)
