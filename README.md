@@ -62,7 +62,7 @@
 
 ### Part VI 可观察性 (OBSERVABILITY)
 
-* [第一章  数据展示](chapterF-01-Analytics-Platform/README.md)
+* [第一章 分析平台](chapterF-01-Analytics-Platform/README.md)
 
 * [第二章 指标监控](chapterF-02-Metrics-Monitor/README.md)
 

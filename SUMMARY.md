@@ -52,17 +52,17 @@
 
 ### Part IV 存储
 
-* [第一章 Lustre ](chapterD-01-Lustre/README.md)
-    * [1.1 xxxx](chapterD-01-Lustre/D-1.1-xxx.md)
-    * [小结](chapterD-01-Lustre/END.md)
+* [第一章  Minio ](chapterD-01-Minio/README.md)
+    * [2.1 xxxx](chapterD-01-Minio/D-1.1-xxx.md)
+    * [小结](chapterD-01-Minio/END.md)
 
-* [第二章  Minio ](chapterD-02-Minio/README.md)
-    * [2.1 xxxx](chapterD-02-Minio/D-2.1-xxx.md)
-    * [小结](chapterD-02-Minio/END.md)
-
-* [第三章  Ceph ](chapterD-03-Ceph/README.md)
-    * [3.1 xxxx](chapterD-03-Ceph/D-3.1-xxx.md)
+* [第二章  Ceph ](chapterD-02-Ceph/README.md)
+    * [3.1 xxxx](chapterD-02-Ceph/D-2.1-xxx.md)
     * [小结](chapterD-03-Ceph/END.md)
+
+* [第三章 Lustre ](chapterD-03-Lustre/README.md)
+    * [1.1 xxxx](chapterD-03-Lustre/D-3.1-xxx.md)
+    * [小结](chapterD-03-Lustre/END.md)
 
 ### Part V 容器和容器编排
 
@@ -91,15 +91,29 @@
 
 ### Part VI 可观察性 (OBSERVABILITY)
 
-* [第一章  数据展示](chapterF-01-Analytics-Platform/README.md)
-    * [1.1  什么是 Grafana](chapterF-01-Analytics-Platform/F-1.1-what-is-grafana.md)
-    * [1.2  定制 Grafana 首页](chapterF-01-Analytics-Platform/F-1.2-change-the-default-home-dashboard.md)
-    * [1.3  Panel Clock](chapterF-01-Analytics-Platform/F-1.3-panel-clock.md)
+* [第一章  分析平台](chapterF-01-Analytics-Platform/README.md)
+    * [1.1  完美的指标分析平台 Grafana](chapterF-01-Analytics-Platform/F-1.1-what-is-grafana.md)
+    * [1.2  安装 Grafana](chapterF-01-Analytics-Platform/F-1.2-install-grafana.md)
+    * [1.3  定制 Grafana 首页](chapterF-01-Analytics-Platform/F-1.3-change-the-default-home-dashboard.md)
     * [1.4  Grafana 告警](chapterF-01-Analytics-Platform/F-1.4-what-is-grafana-alerts.md)
     * [1.5  Grafana  正则](chapterF-01-Analytics-Platform/F-1.5-grafana-regex.md)
-    * [1.6  Panel Graph](chapterF-01-Analytics-Platform/F-1.6-panel-graph.md)
+    * [1.6  Grafana 定制主题](chapterF-01-Analytics-Platform/F-1.6-grafana-theme.md)
     * [1.7  Panel Stat](chapterF-01-Analytics-Platform/F-1.7-panel-stat.md)
     * [1.8  Panel Gauge](chapterF-01-Analytics-Platform/F-1.8-panel-gauge.md)
+    * [1.9  Panel Clock](chapterF-01-Analytics-Platform/F-1.9-panel-clock.md)
+    * [1.10  Panel Table](chapterF-01-Analytics-Platform/F-1.10-panel-table.md)
+    * [1.11  Panel Pie Chart](chapterF-01-Analytics-Platform/F-1.11-panel-pie-chart.md)
+    * [1.12  Panel Bar Gauge](chapterF-01-Analytics-Platform/F-1.12-panel-bar-gauge.md)
+    * [1.13  Panel Text](chapterF-01-Analytics-Platform/F-1.13-panel-text.md)
+    * [1.14  Panel Time Series](chapterF-01-Analytics-Platform/F-1.14-panel-time-series.md)
+    * [1.15  Panel Node Graph](chapterF-01-Analytics-Platform/F-1.15-panel-node-graph.md)
+    * [1.16  Panel Graph](chapterF-01-Analytics-Platform/F-1.16-panel-graph.md)
+    * [1.17  Datasource Zabbix](chapterF-01-Analytics-Platform/F-1.17-datasource-zabbix.md)
+    * [1.18  Datasource Loki](chapterF-01-Analytics-Platform/F-1.18-datasource-loki.md)
+    * [1.19  Datasource MySQL](chapterF-01-Analytics-Platform/F-1.19-datasource-mysql.md)
+    * [1.20  Datasource ElasticSearch](chapterF-01-Analytics-Platform/F-1.20-datasource-elasticsearch.md)
+    * [1.21  Datasource Prometheus](chapterF-01-Analytics-Platform/F-1.21-datasource-prometheus.md)
+
     * [小结](chapterF-01-Analytics-Platform/END.md)
 
 * [第二章 指标监控](chapterF-02-Metrics-Monitor/README.md)
@@ -113,13 +127,13 @@
     * [2.14 Zabbix 问题集锦（二）](chapterF-02-Metrics-Monitor/F-2.14-zabbix-problem-stes-2.md)
     * [小结](chapterF-02-Metric-Monitor/END.md)
 
-* [第三章 日志监控](chapterF-03-Logs/README.md)
-    * [3.1 xxxx](chapterF-03-Logs/F-3.1-xxx.md)
-    * [小结](chapterF-03-Logs/END.md)
+* [第三章 日志监控](chapterF-03-Logs-Monitor/README.md)
+    * [3.1 xxxx](chapterF-03-Logs-Monitor/F-3.1-xxx.md)
+    * [小结](chapterF-03-Logs-Monitor/END.md)
 
-* [第四章  APM](chapterF-04-APM/README.md)
-    * [4.1 xxxx](chapterF-04-APM/F-4.1-xxx.md)
-    * [小结](chapterF-04-APM/END.md)
+* [第四章  APM](chapterF-04-Tracing-Monitor/README.md)
+    * [4.1 xxxx](chapterF-04-Tracing-Monitor/F-4.1-xxx.md)
+    * [小结](chapterF-04-Tracing-Monitor/END.md)
 
 
 ### Part VII SRE
