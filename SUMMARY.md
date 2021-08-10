@@ -113,6 +113,8 @@
     * [1.19  Datasource MySQL](chapterF-01-Analytics-Platform/F-1.19-datasource-mysql.md)
     * [1.20  Datasource ElasticSearch](chapterF-01-Analytics-Platform/F-1.20-datasource-elasticsearch.md)
     * [1.21  Datasource Prometheus](chapterF-01-Analytics-Platform/F-1.21-datasource-prometheus.md)
+    * [1.22  组织角色](chapterF-01-Analytics-Platform/F-1.22-orgaization-roles.md)
+    * [1.23  重置管理员密码](chapterF-01-Analytics-Platform/F-1.23-reset-admin-password.md)
 
     * [小结](chapterF-01-Analytics-Platform/END.md)
 
@@ -123,6 +125,9 @@
     * [2.4 Zabbix 产品发布周期](chapterF-02-Metrics-Monitor/F-2.4-zabbix-life-cycle.md)
     * [2.5 Zabbix 日志输出格式](chapterF-02-Metrics-Monitor/F-2.5-zabbix-log-format.md)
     * [2.6 Zabbix Agent 安装](chapterF-02-Metrics-Monitor/F-2.6-zabbix-install-agent.md)
+    * [2.7 Zabbix 源码安装](chapterF-02-Metrics-Monitor/F-2.6-zabbix-source-install.md)
+    * [2.8 Zabbix  管理员密码修改](chapterF-02-Metrics-Monitor/F-2.6-zabbix-admin-password.md)
+    * [2.9 Zabbix  模板](chapterF-02-Metrics-Monitor/F-2.6-zabbix-templates.md)
     * [2.13 Zabbix 问题集锦（一）](chapterF-02-Metrics-Monitor/F-2.13-zabbix-problem-stes-1.md)
     * [2.14 Zabbix 问题集锦（二）](chapterF-02-Metrics-Monitor/F-2.14-zabbix-problem-stes-2.md)
     * [小结](chapterF-02-Metric-Monitor/END.md)
