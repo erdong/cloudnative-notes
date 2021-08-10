@@ -1,0 +1,2094 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.3  定制 Grafana 首页 · CloudNative Notes</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Er Dong <erdong@mail.erdong.site>">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="F-1.4-what-is-grafana-alerts.html" />
+    
+    
+    <link rel="prev" href="F-1.2-install-grafana.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://erdong.site" target="_blank" class="custom-link">Erdong's Blog</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    [前言]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter00/0.1-release.html">
+            
+                <a href="../chapter00/0.1-release.html">
+            
+                    
+                    发行注记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter00/0.2-contribution.html">
+            
+                <a href="../chapter00/0.2-contribution.html">
+            
+                    
+                    贡献指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part Ⅰ 基础篇</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../chapterA-01-Basic/">
+            
+                <a href="../chapterA-01-Basic/">
+            
+                    
+                    第一章 云原生基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../chapterA-01-Basic/A-1.1-cloud-native-history.html">
+            
+                <a href="../chapterA-01-Basic/A-1.1-cloud-native-history.html">
+            
+                    
+                    1.1 云原生的历史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../chapterA-01-Basic/A-1.2-introduction.html">
+            
+                <a href="../chapterA-01-Basic/A-1.2-introduction.html">
+            
+                    
+                    1.2 需要准备的知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../chapterA-01-Basic/A-1.3-cloud-native-define.html">
+            
+                <a href="../chapterA-01-Basic/A-1.3-cloud-native-define.html">
+            
+                    
+                    1.3 云原生的定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../chapterA-01-Basic/END.html">
+            
+                <a href="../chapterA-01-Basic/END.html">
+            
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../chapterA-02-Arrangement/">
+            
+                <a href="../chapterA-02-Arrangement/">
+            
+                    
+                    第二章 应用编排与管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../chapterA-02-Arrangement/A-2.1-xxx.md">
+            
+                <span>
+            
+                    
+                    2.1 xxxx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../chapterA-02-Arrangement/A-2.2-xxx.md">
+            
+                <span>
+            
+                    
+                    2.2 xxxx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../chapterA-02-Arrangement/A-2.3-xxx.md">
+            
+                <span>
+            
+                    
+                    2.3 xxxx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../chapterA-02-Arrangement/END.html">
+            
+                <a href="../chapterA-02-Arrangement/END.html">
+            
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../chapterA-03/README.md">
+            
+                <span>
+            
+                    
+                    第三章 xxxx
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../chapterA-03/A-3.1-xxx.md">
+            
+                <span>
+            
+                    
+                    3.1 xxxx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../chapterA-03/A-3.2-xxx.md">
+            
+                <span>
+            
+                    
+                    3.2 xxxx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../chapterA-03/A-3.3-xxx.md">
+            
+                <span>
+            
+                    
+                    3.3 xxxx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../chapterA-03/END.md">
+            
+                <span>
+            
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part ⅠⅠ 操作系统</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../chapterB-01-Linux/">
+            
+                <a href="../chapterB-01-Linux/">
+            
+                    
+                    第一章 Linux 系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../chapterB-01-Linux/B-1.1-what-is-linux.html">
+            
+                <a href="../chapterB-01-Linux/B-1.1-what-is-linux.html">
+            
+                    
+                    1.1 Linux 是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../chapterB-01-Linux/B-1.2-lost-found-dir.html">
+            
+                <a href="../chapterB-01-Linux/B-1.2-lost-found-dir.html">
+            
+                    
+                    1.2  Lost Found 目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../chapterB-01-Linux/B-1.3-shell-date.html">
+            
+                <a href="../chapterB-01-Linux/B-1.3-shell-date.html">
+            
+                    
+                    1.3  date 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../chapterB-01-Linux/B-1.10-service-manager.html">
+            
+                <a href="../chapterB-01-Linux/B-1.10-service-manager.html">
+            
+                    
+                    1.10 服务管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../chapterB-01-Linux/B-1.11-hide-nginx-version.html">
+            
+                <a href="../chapterB-01-Linux/B-1.11-hide-nginx-version.html">
+            
+                    
+                    1.11 隐藏 Nginx 版本信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../chapterB-01-Linux/END.html">
+            
+                <a href="../chapterB-01-Linux/END.html">
+            
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../chapterB-02-Windows/">
+            
+                <a href="../chapterB-02-Windows/">
+            
+                    
+                    第二章  Windows 系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../chapterB-02-Windows/B-2.1-xxx.md">
+            
+                <span>
+            
+                    
+                    2.1 xxxx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../chapterB-02-Windows/END.html">
+            
+                <a href="../chapterB-02-Windows/END.html">
+            
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part ⅠⅠⅠ 网络</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../chapterC-01/README.md">
+            
+                <span>
+            
+                    
+                    第一章 xxx
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../chapterC-01/C-1.1-xxx.md">
+            
+                <span>
+            
+                    
+                    1.1 xxxx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../chapterC-01/END.md">
+            
+                <span>
+            
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../chapterC-02/README.md">
+            
+                <span>
+            
+                    
+                    第二章  xxxx
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="../chapterC-02/C-2.1-xxx.md">
+            
+                <span>
+            
+                    
+                    2.1 xxxx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="../chapterC-02/END.md">
+            
+                <span>
+            
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part IV 存储</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../chapterD-01-Minio/">
+            
+                <a href="../chapterD-01-Minio/">
+            
+                    
+                    第一章  Minio 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../chapterD-01-Minio/D-1.1-xxx.md">
+            
+                <span>
+            
+                    
+                    2.1 xxxx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../chapterD-01-Minio/END.md">
+            
+                <span>
+            
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../chapterD-02-Ceph/">
+            
+                <a href="../chapterD-02-Ceph/">
+            
+                    
+                    第二章  Ceph 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../chapterD-02-Ceph/D-2.1-xxx.md">
+            
+                <span>
+            
+                    
+                    3.1 xxxx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../chapterD-03-Ceph/END.md">
+            
+                <span>
+            
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../chapterD-03-Lustre/README.md">
+            
+                <span>
+            
+                    
+                    第三章 Lustre 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" data-path="../chapterD-03-Lustre/D-3.1-xxx.md">
+            
+                <span>
+            
+                    
+                    1.1 xxxx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.2" data-path="../chapterD-03-Lustre/END.md">
+            
+                <span>
+            
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part V 容器和容器编排</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../chapterE-01-Container/">
+            
+                <a href="../chapterE-01-Container/">
+            
+                    
+                    第一章 容器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../chapterE-01-Container/E-1.1-what-is-conitainer.html">
+            
+                <a href="../chapterE-01-Container/E-1.1-what-is-conitainer.html">
+            
+                    
+                    1.1 Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../chapterE-01-Container/E-1.1-what-is-podman.md">
+            
+                <span>
+            
+                    
+                    1.2 Podman
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../chapterE-02-Repository/">
+            
+                <a href="../chapterE-02-Repository/">
+            
+                    
+                    第二章 容器仓库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.2.1" data-path="../chapterE-02-Repository/E-2.1-docker-hub.md">
+            
+                <span>
+            
+                    
+                    2.1 Docker Hub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.2" data-path="../chapterE-02-Repository/E-2.1-singularity-hub.md">
+            
+                <span>
+            
+                    
+                    2.2 Singularity Hub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.3" data-path="../chapterE-02-Repository/END.md">
+            
+                <span>
+            
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../chapterE-03-Compose/">
+            
+                <a href="../chapterE-03-Compose/">
+            
+                    
+                    第三章 容器编排 Docker Compose
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.3.1" data-path="../chapterE-03-Compose/E-3.1-xxx.md">
+            
+                <span>
+            
+                    
+                    3.1 xxxx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.2" data-path="../chapterE-03-Compose/END.md">
+            
+                <span>
+            
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../chapterE-04-Kubernetes/">
+            
+                <a href="../chapterE-04-Kubernetes/">
+            
+                    
+                    第四章 容器编排 Kubernetes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.4.1" data-path="../chapterE-04-Kubernetes/E-4.1-what-is-kubernetes.html">
+            
+                <a href="../chapterE-04-Kubernetes/E-4.1-what-is-kubernetes.html">
+            
+                    
+                    4.1 Kubernetes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4.2" data-path="../chapterE-04-Kubernetes/E-4.2-pod-lifecycle.html">
+            
+                <a href="../chapterE-04-Kubernetes/E-4.2-pod-lifecycle.html">
+            
+                    
+                    4.2 Pod 的生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4.3" data-path="../chapterE-04-Kubernetes/E-4.3-containter-lifecycle.html">
+            
+                <a href="../chapterE-04-Kubernetes/E-4.3-containter-lifecycle.html">
+            
+                    
+                    4.3 容器的生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4.4" data-path="../chapterE-04-Kubernetes/END.md">
+            
+                <span>
+            
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../chapterE-05-Swarm/">
+            
+                <a href="../chapterE-05-Swarm/">
+            
+                    
+                    第五章 容器编排 Swarm 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.5.1" data-path="../chapterE-05-Swarm/E-5.1-xxx.md">
+            
+                <span>
+            
+                    
+                    5.1 xxxx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.2" data-path="../chapterE-05-Swarm/END.md">
+            
+                <span>
+            
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part VI 可观察性 (OBSERVABILITY)</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第一章  分析平台
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="F-1.1-what-is-grafana.html">
+            
+                <a href="F-1.1-what-is-grafana.html">
+            
+                    
+                    1.1  完美的指标分析平台 Grafana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.2" data-path="F-1.2-install-grafana.html">
+            
+                <a href="F-1.2-install-grafana.html">
+            
+                    
+                    1.2  安装 Grafana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="7.1.3" data-path="F-1.3-change-the-default-home-dashboard.html">
+            
+                <a href="F-1.3-change-the-default-home-dashboard.html">
+            
+                    
+                    1.3  定制 Grafana 首页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.4" data-path="F-1.4-what-is-grafana-alerts.html">
+            
+                <a href="F-1.4-what-is-grafana-alerts.html">
+            
+                    
+                    1.4  Grafana 告警
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.5" data-path="F-1.5-grafana-regex.html">
+            
+                <a href="F-1.5-grafana-regex.html">
+            
+                    
+                    1.5  Grafana  正则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.6" data-path="F-1.6-grafana-theme.html">
+            
+                <a href="F-1.6-grafana-theme.html">
+            
+                    
+                    1.6  Grafana 定制主题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.7" data-path="F-1.7-panel-stat.html">
+            
+                <a href="F-1.7-panel-stat.html">
+            
+                    
+                    1.7  Panel Stat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.8" data-path="F-1.8-panel-gauge.html">
+            
+                <a href="F-1.8-panel-gauge.html">
+            
+                    
+                    1.8  Panel Gauge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.9" data-path="F-1.9-panel-clock.html">
+            
+                <a href="F-1.9-panel-clock.html">
+            
+                    
+                    1.9  Panel Clock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.10" data-path="F-1.10-panel-table.html">
+            
+                <a href="F-1.10-panel-table.html">
+            
+                    
+                    1.10  Panel Table
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.11" data-path="F-1.11-panel-pie-chart.html">
+            
+                <a href="F-1.11-panel-pie-chart.html">
+            
+                    
+                    1.11  Panel Pie Chart
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.12" data-path="F-1.12-panel-bar-gauge.html">
+            
+                <a href="F-1.12-panel-bar-gauge.html">
+            
+                    
+                    1.12  Panel Bar Gauge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.13" data-path="F-1.13-panel-text.html">
+            
+                <a href="F-1.13-panel-text.html">
+            
+                    
+                    1.13  Panel Text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.14" data-path="F-1.14-panel-time-series.html">
+            
+                <a href="F-1.14-panel-time-series.html">
+            
+                    
+                    1.14  Panel Time Series
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.15" data-path="F-1.15-panel-node-graph.html">
+            
+                <a href="F-1.15-panel-node-graph.html">
+            
+                    
+                    1.15  Panel Node Graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.16" data-path="F-1.16-panel-graph.html">
+            
+                <a href="F-1.16-panel-graph.html">
+            
+                    
+                    1.16  Panel Graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.17" data-path="F-1.17-datasource-zabbix.html">
+            
+                <a href="F-1.17-datasource-zabbix.html">
+            
+                    
+                    1.17  Datasource Zabbix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.18" data-path="F-1.18-datasource-loki.html">
+            
+                <a href="F-1.18-datasource-loki.html">
+            
+                    
+                    1.18  Datasource Loki
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.19" data-path="F-1.19-datasource-mysql.html">
+            
+                <a href="F-1.19-datasource-mysql.html">
+            
+                    
+                    1.19  Datasource MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.20" data-path="F-1.20-datasource-elasticsearch.html">
+            
+                <a href="F-1.20-datasource-elasticsearch.html">
+            
+                    
+                    1.20  Datasource ElasticSearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.21" data-path="F-1.21-datasource-prometheus.html">
+            
+                <a href="F-1.21-datasource-prometheus.html">
+            
+                    
+                    1.21  Datasource Prometheus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.22" data-path="F-1.22-orgaization-roles.html">
+            
+                <a href="F-1.22-orgaization-roles.html">
+            
+                    
+                    1.22  组织角色
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.23" data-path="F-1.23-reset-admin-password.html">
+            
+                <a href="F-1.23-reset-admin-password.html">
+            
+                    
+                    1.23  重置管理员密码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.24" data-path="END.html">
+            
+                <a href="END.html">
+            
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../chapterF-02-Metrics-Monitor/">
+            
+                <a href="../chapterF-02-Metrics-Monitor/">
+            
+                    
+                    第二章 指标监控
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.2.1" data-path="../chapterF-02-Metrics-Monitor/F-2.1-prometheus.html">
+            
+                <a href="../chapterF-02-Metrics-Monitor/F-2.1-prometheus.html">
+            
+                    
+                    2.1 Prometheus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.2" data-path="../chapterF-02-Metrics-Monitor/F-2.2-zabbix-introduction.html">
+            
+                <a href="../chapterF-02-Metrics-Monitor/F-2.2-zabbix-introduction.html">
+            
+                    
+                    2.2 Zabbix 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.3" data-path="../chapterF-02-Metrics-Monitor/F-2.3-zabbix-install.html">
+            
+                <a href="../chapterF-02-Metrics-Monitor/F-2.3-zabbix-install.html">
+            
+                    
+                    2.3 Zabbix 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.4" data-path="../chapterF-02-Metrics-Monitor/F-2.4-zabbix-life-cycle.html">
+            
+                <a href="../chapterF-02-Metrics-Monitor/F-2.4-zabbix-life-cycle.html">
+            
+                    
+                    2.4 Zabbix 产品发布周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.5" data-path="../chapterF-02-Metrics-Monitor/F-2.5-zabbix-log-format.html">
+            
+                <a href="../chapterF-02-Metrics-Monitor/F-2.5-zabbix-log-format.html">
+            
+                    
+                    2.5 Zabbix 日志输出格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.6" data-path="../chapterF-02-Metrics-Monitor/F-2.6-zabbix-install-agent.html">
+            
+                <a href="../chapterF-02-Metrics-Monitor/F-2.6-zabbix-install-agent.html">
+            
+                    
+                    2.6 Zabbix Agent 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.7" data-path="../chapterF-02-Metrics-Monitor/F-2.6-zabbix-source-install.md">
+            
+                <span>
+            
+                    
+                    2.7 Zabbix 源码安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.8" data-path="../chapterF-02-Metrics-Monitor/F-2.6-zabbix-admin-password.md">
+            
+                <span>
+            
+                    
+                    2.8 Zabbix  管理员密码修改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.9" data-path="../chapterF-02-Metrics-Monitor/F-2.6-zabbix-templates.md">
+            
+                <span>
+            
+                    
+                    2.9 Zabbix  模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.10" data-path="../chapterF-02-Metrics-Monitor/F-2.13-zabbix-problem-stes-1.html">
+            
+                <a href="../chapterF-02-Metrics-Monitor/F-2.13-zabbix-problem-stes-1.html">
+            
+                    
+                    2.13 Zabbix 问题集锦（一）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.11" data-path="../chapterF-02-Metrics-Monitor/F-2.14-zabbix-problem-stes-2.md">
+            
+                <span>
+            
+                    
+                    2.14 Zabbix 问题集锦（二）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2.12" data-path="../chapterF-02-Metric-Monitor/END.md">
+            
+                <span>
+            
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../chapterF-03-Logs-Monitor/README.md">
+            
+                <span>
+            
+                    
+                    第三章 日志监控
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.3.1" data-path="../chapterF-03-Logs-Monitor/F-3.1-xxx.md">
+            
+                <span>
+            
+                    
+                    3.1 xxxx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3.2" data-path="../chapterF-03-Logs-Monitor/END.md">
+            
+                <span>
+            
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../chapterF-04-Tracing-Monitor/README.md">
+            
+                <span>
+            
+                    
+                    第四章  APM
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.4.1" data-path="../chapterF-04-Tracing-Monitor/F-4.1-xxx.md">
+            
+                <span>
+            
+                    
+                    4.1 xxxx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4.2" data-path="../chapterF-04-Tracing-Monitor/END.md">
+            
+                <span>
+            
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part VII SRE</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../chapterG-01-Continuous-Integration/README.md">
+            
+                <span>
+            
+                    
+                    第一章 持续集成、交付、部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1.1" data-path="../chapterG-01-Continuous-Integration/G-1.1-xxx.md">
+            
+                <span>
+            
+                    
+                    1.1 xxxx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.2" data-path="../chapterG-01-Continuous-Integration/END.md">
+            
+                <span>
+            
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../chapterG-02-automate-tools/">
+            
+                <a href="../chapterG-02-automate-tools/">
+            
+                    
+                    第二章 自动化管理工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.2.1" data-path="../chapterG-02-automate-tools/G-2.1-what-is-ansible.md">
+            
+                <span>
+            
+                    
+                    2.1 Ansible
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2.2" data-path="../chapterG-02-automate-tools/G-2.1-what-is-saltstack.md">
+            
+                <span>
+            
+                    
+                    2.2 SaltStack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2.3" data-path="../chapterG-02-automate-tools/G-2.13-salt-problem-sets-1.html">
+            
+                <a href="../chapterG-02-automate-tools/G-2.13-salt-problem-sets-1.html">
+            
+                    
+                    2.13 SaltStack 问题集锦（一）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2.4" data-path="../chapterG-02-automate-tools/G-2.14-salt-problem-sets-2.md">
+            
+                <span>
+            
+                    
+                    2.14 SaltStack 问题集锦（二）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2.5" data-path="../chapterG-02--automate-tools/END.md">
+            
+                <span>
+            
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="../chapterG-03-Markdown/">
+            
+                <a href="../chapterG-03-Markdown/">
+            
+                    
+                    第三章  Markdown
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.3.1" data-path="../chapterG-03-Markdown/G-3.1-what-is-markdown.html">
+            
+                <a href="../chapterG-03-Markdown/G-3.1-what-is-markdown.html">
+            
+                    
+                    2.1 Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3.2" data-path="../chapterG-03-Markdown/G-3.2-markdown-basic.html">
+            
+                <a href="../chapterG-03-Markdown/G-3.2-markdown-basic.html">
+            
+                    
+                    2.2 Markdown 基础语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3.3" data-path="../chapterG-03-Markdown/G-3.3-folding-doc.html">
+            
+                <a href="../chapterG-03-Markdown/G-3.3-folding-doc.html">
+            
+                    
+                    2.3 Markdown 折叠语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3.4" data-path="../chapterG-03-Markdown/END.html">
+            
+                <a href="../chapterG-03-Markdown/END.html">
+            
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1.3  定制 Grafana 首页</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x91CD;&#x7F6E;-grafana-&#x9ED8;&#x8BA4;&#x7684;-home-dashboards">&#x91CD;&#x7F6E; Grafana &#x9ED8;&#x8BA4;&#x7684; home Dashboards</h1>
+<p>Grafana &#x767B;&#x9646;&#x4EE5;&#x540E;&#x9ED8;&#x8BA4;&#x5C55;&#x793A;&#x7684;&#x9875;&#x9762;&#x540D;&#x79F0;&#x662F; Home&#xFF0C;&#x8FD9;&#x4E2A;&#x9875;&#x9762;&#x662F;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x8FDB;&#x884C;&#x5B9A;&#x4E49;&#x5E76;&#x4E14;&#x8FDB;&#x884C;&#x66F4;&#x6539;&#x7684;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x4F7F;&#x7528; Grafana &#x6784;&#x5EFA;&#x4E86;&#x81EA;&#x5DF1;&#x7684;&#x53EF;&#x4EE5;&#x89C2;&#x6D4B;&#x5206;&#x6790;&#x5E73;&#x53F0;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x5BF9;&#x8FD9;&#x4E2A;&#x9875;&#x9762;&#x8FDB;&#x884C;&#x5B9A;&#x5236;&#xFF0C;&#x66F4;&#x65B0;&#x6210;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x7684;&#x6837;&#x5B50;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x8FBE;&#x5230;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x9996;&#x5148;&#x81EA;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x6211;&#x4EEC;&#x559C;&#x6B22;&#x7684;&#x9875;&#x9762;&#xFF0C;&#x8FD9;&#x4E2A;&#x9875;&#x9762;&#x5B9A;&#x4E49;&#x597D;&#x4EE5;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x66F4;&#x6539;&#x4E86;&#x3002; &#x66F4;&#x6539;&#x8FD9;&#x4E2A;&#x9875;&#x9762;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8BA9;&#x6240;&#x6709;&#x4EBA;&#x3001;&#x7279;&#x5B9A;&#x7684;&#x56E2;&#x961F;&#x3001;&#x4E2A;&#x4EBA;&#x6765;&#x770B;&#x5230;&#x5BF9;&#x5E94;&#x7684;&#x9875;&#x9762;&#x3002;</p>
+<h1 id="&#x5168;&#x5C40;-home-dashboards-&#x4FEE;&#x6539;">&#x5168;&#x5C40; Home Dashboards &#x4FEE;&#x6539;</h1>
+<p>&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x53EF;&#x4EE5;&#x66F4;&#x6539;&#x5168;&#x5C40;&#x7684; Home Dashboards</p>
+<h2 id="&#x7B2C;&#x4E00;&#x79CD;-&#x9996;&#x9009;&#x9879;&#x4FEE;&#x6539;">&#x7B2C;&#x4E00;&#x79CD; &#x9996;&#x9009;&#x9879;&#x4FEE;&#x6539;</h2>
+<ul>
+<li><ol>
+<li>&#x901A;&#x8FC7;&#x5355;&#x51FB;&#x4EEA;&#x8868;&#x677F;&#x6807;&#x9898;&#x65C1;&#x8FB9;&#x7684;&#x661F;&#x53F7;&#x4E3A;&#x8BE5;&#x4EEA;&#x8868;&#x677F;&#x52A0;&#x661F;</li>
+</ol>
+</li>
+<li><ol>
+<li>&#x5728;&#x5DE6;&#x4FA7;&#x83DC;&#x5355;&#x4E0A;&#xFF0C;&#x5C06;&#x5149;&#x6807;&#x505C;&#x7559;&#x5728; Configuration (&#x9F7F;&#x8F6E;)&#x56FE;&#x6807;&#x4E0A;&#xFF0C;&#x7136;&#x540E;&#x5355;&#x51FB; Preferences &#x3002;</li>
+</ol>
+</li>
+<li><ol>
+<li>&#x9996;&#x9009;&#x9879;&#x9875;&#x9762;&#x6709; 3 &#x4E2A;&#x6307;&#x6807;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x5206;&#x522B;&#x662F; UI &#x4E3B;&#x9898;&#x3001;Home Dashboards&#x3001;Timezone&#xFF08;&#x65F6;&#x533A;&#xFF09;&#xFF0C;&#x6211;&#x4EEC;&#x9009;&#x62E9;  Home Dashboards &#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x9009;&#x62E9;&#x4E4B;&#x524D;&#x7F16;&#x8F91;&#x597D;&#x7684; Dashboards&#xFF0C;&#x8FD9;&#x91CC;&#x53EA;&#x663E;&#x793A;&#x52A0;&#x661F;&#x7684; Dashboards &#xFF0C;&#x6240;&#x4EE5;&#x7B2C;&#x4E00;&#x6B65;&#x8981;&#x5BF9; Dashboards &#x8FDB;&#x884C;&#x52A0;&#x661F;&#x3002;</li>
+</ol>
+</li>
+<li><ol>
+<li>&#x70B9;&#x51FB; Save &#x8FDB;&#x884C;&#x4FDD;&#x5B58;&#x3002;</li>
+</ol>
+</li>
+</ul>
+<h2 id="&#x7B2C;&#x4E8C;&#x79CD;-&#x914D;&#x7F6E;&#x6587;&#x4EF6;">&#x7B2C;&#x4E8C;&#x79CD; &#x914D;&#x7F6E;&#x6587;&#x4EF6;</h2>
+<ul>
+<li><ol>
+<li>&#x5C06;&#x7F16;&#x8F91;&#x597D;&#x7684; Dashboards &#x5BFC;&#x51FA; json &#x6587;&#x4EF6;&#xFF0C;&#x6BD4;&#x5982; home.json</li>
+</ol>
+</li>
+<li><ol>
+<li>&#x767B;&#x9646;&#x90E8;&#x7F72; Grafana &#x7684;&#x673A;&#x5668;&#xFF0C;&#x5C06;&#x8BE5;&#x6587;&#x4EF6;&#x653E;&#x7F6E;&#x5230;&#x9884;&#x7F6E;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x6BD4;&#x5982; /etc/grafana/home.json</li>
+</ol>
+</li>
+<li><ol>
+<li>&#x4FEE;&#x6539; Grafana &#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6; grafana.ini &#x4FEE;&#x6539; dashboards &#x90E8;&#x5206;&#x5982;&#x4E0B;</li>
+</ol>
+</li>
+</ul>
+<pre><code>[dashboards]
+# Path to the default home dashboard. If this value is empty, then Grafana uses StaticRootPath + &quot;dashboards/home.json&quot;
+default_home_dashboard_path = data/main-dashboard.json
+</code></pre><ul>
+<li><ol>
+<li>&#x4FDD;&#x5B58;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5373;&#x53EF;&#x3002;</li>
+</ol>
+</li>
+</ul>
+<h1 id="&#x56E2;&#x961F;-home-dashboards">&#x56E2;&#x961F; Home Dashboards</h1>
+<p>&#x4E0A;&#x8FF0;&#x65B9;&#x6CD5;&#x6211;&#x4EEC;&#x4FEE;&#x6539;&#x5E76;&#x4E14;&#x8BBE;&#x7F6E;&#x4E86; Grafana &#x767B;&#x9646;&#x540E;&#x5168;&#x5C40;&#x7684; Home &#x9875;&#x9762;&#x3002;&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x56E2;&#x961F;&#x7684; Home Dashboards </p>
+<ul>
+<li><ol>
+<li>&#x5BFC;&#x822A;&#x5230;&#x8981;&#x8BBE;&#x7F6E;&#x4E3A; Home Dashboards &#x7684; Dashboards&#x3002;</li>
+</ol>
+</li>
+<li><ol>
+<li>&#x5355;&#x51FB; Dashboards &#x6807;&#x9898;&#x65C1;&#x8FB9;&#x7684;&#x661F;&#x53F7;&#x4E3A;&#x8BE5; Dashboards &#x52A0;&#x661F;&#x3002;</li>
+</ol>
+</li>
+<li><ol>
+<li>&#x5728;&#x5DE6;&#x4FA7;&#x83DC;&#x5355;&#x4E0A;&#xFF0C;&#x5C06;&#x5149;&#x6807;&#x60AC;&#x505C;&#x5728;Configuration (&#x9F7F;&#x8F6E;)&#x56FE;&#x6807;&#x4E0A;&#xFF0C;&#x7136;&#x540E;&#x5355;&#x51FB;&#x201C;Team&#x201D;&#x3002;</li>
+</ol>
+</li>
+<li><ol>
+<li>&#x5355;&#x51FB;&#x8981;&#x66F4;&#x6539; Home Dashboards &#x7684;&#x56E2;&#x961F;&#xFF0C;&#x7136;&#x540E;&#x5BFC;&#x822A;&#x5230; Settings &#x9009;&#x9879;&#x5361;&#x3002;</li>
+</ol>
+</li>
+<li><ol>
+<li>&#x9996;&#x9009;&#x9879;&#x9875;&#x9762;&#x6709; 3 &#x4E2A;&#x6307;&#x6807;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x5206;&#x522B;&#x662F; UI &#x4E3B;&#x9898;&#x3001;Home Dashboards&#x3001;Timezone&#xFF08;&#x65F6;&#x533A;&#xFF09;&#xFF0C;&#x6211;&#x4EEC;&#x9009;&#x62E9;  Home Dashboards &#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x9009;&#x62E9;&#x4E4B;&#x524D;&#x7F16;&#x8F91;&#x597D;&#x7684; Dashboards&#xFF0C;&#x8FD9;&#x91CC;&#x53EA;&#x663E;&#x793A;&#x52A0;&#x661F;&#x7684; Dashboards &#xFF0C;&#x6240;&#x4EE5;&#x7B2C;&#x4E00;&#x6B65;&#x8981;&#x5BF9; Dashboards &#x8FDB;&#x884C;&#x52A0;&#x661F;&#x3002;</li>
+</ol>
+</li>
+<li><ol>
+<li>&#x70B9;&#x51FB;&#x4FDD;&#x5B58;&#x5373;&#x53EF;&#x3002;</li>
+</ol>
+</li>
+</ul>
+<h1 id="&#x4E2A;&#x4EBA;-home-dashboards">&#x4E2A;&#x4EBA; Home Dashboards</h1>
+<p>&#x6211;&#x4EEC;&#x63A5;&#x4E0B;&#x6765;&#x4FEE;&#x6539;&#x4E2A;&#x4EBA;&#x7684; Home Dashboards  </p>
+<ul>
+<li><ol>
+<li>&#x5BFC;&#x822A;&#x5230;&#x8981;&#x8BBE;&#x7F6E;&#x4E3A; Home Dashboards &#x7684; Dashboards&#x3002;</li>
+</ol>
+</li>
+<li><ol>
+<li>&#x5355;&#x51FB; Dashboards &#x6807;&#x9898;&#x65C1;&#x8FB9;&#x7684;&#x661F;&#x53F7;&#x4E3A;&#x8BE5; Dashboards &#x52A0;&#x661F;&#x3002;</li>
+</ol>
+</li>
+<li><ol>
+<li>&#x5728;&#x5DE6;&#x4FA7;&#x83DC;&#x5355;&#x4E0A;&#xFF0C;&#x70B9;&#x51FB;&#x81EA;&#x5DF1;&#x7684;&#x5934;&#x50CF;&#xFF0C;&#x7136;&#x540E;&#x5355;&#x51FB;&#x201C;Preferences&#x201D;&#x3002;</li>
+</ol>
+</li>
+<li><ol>
+<li>&#x5728;&#x9996;&#x9009;&#x9879;&#x9875;&#x9762;&#x6709; 3 &#x4E2A;&#x6307;&#x6807;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x5206;&#x522B;&#x662F; UI &#x4E3B;&#x9898;&#x3001;Home Dashboards&#x3001;Timezone&#xFF08;&#x65F6;&#x533A;&#xFF09;&#xFF0C;&#x6211;&#x4EEC;&#x9009;&#x62E9;  Home Dashboards &#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x9009;&#x62E9;&#x4E4B;&#x524D;&#x7F16;&#x8F91;&#x597D;&#x7684; Dashboards&#xFF0C;&#x8FD9;&#x91CC;&#x53EA;&#x663E;&#x793A;&#x52A0;&#x661F;&#x7684; Dashboards &#xFF0C;&#x6240;&#x4EE5;&#x7B2C;&#x4E00;&#x6B65;&#x8981;&#x5BF9; Dashboards &#x8FDB;&#x884C;&#x52A0;&#x661F;&#x3002;</li>
+</ol>
+</li>
+<li><ol>
+<li>&#x70B9;&#x51FB;&#x4FDD;&#x5B58;&#x5373;&#x53EF;&#x3002;</li>
+</ol>
+</li>
+</ul>
+<h1 id="&#x5EFA;&#x8BAE;">&#x5EFA;&#x8BAE;</h1>
+<p>&#x5BF9;&#x4E8E; &#x5168;&#x5C40;&#x6216;&#x8005;&#x56E2;&#x961F;&#x6765;&#x8BF4;&#xFF0C;&#x5EFA;&#x8BAE;&#x5206;&#x4E3A; 3 &#x5757;&#xFF0C;&#x9876;&#x90E8;&#x4E00;&#x5757;&#xFF0C;&#x5185;&#x5BB9;&#x53EF;&#x4EE5;&#x662F;&#x7B80;&#x5355;&#x7684;&#x4E00;&#x4E2A;&#x6B22;&#x8FCE;&#x6807;&#x9898;&#xFF0C;&#x6BD4;&#x5982;&#x5199; <code>Welcome to Erdong Observable Analytics Platform</code></p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x5DE6;&#x8FB9;&#x653E; Dashboards List&#xFF0C;&#x53F3;&#x8FB9;&#x653E;&#x4E00;&#x4E2A;&#x516C;&#x544A;&#x6216;&#x8005;&#x4F7F;&#x7528;&#x8BF4;&#x660E;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x8BF4;&#x660E;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; Text Panel &#x6216;&#x8005; News , Text Panel &#x7684;&#x8BDD;&#x5C31;&#x662F; Html &#x6216;&#x8005; Markdown &#x8FDB;&#x884C;&#x7F16;&#x5199;&#xFF0C;News &#x7684;&#x8BDD;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x94FE;&#x63A5;&#xFF0C;&#x94FE;&#x63A5;&#x5230;&#x5BF9;&#x5E94;&#x7684;&#x9875;&#x9762;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4E2A;&#x9875;&#x9762;&#x8981;&#x652F;&#x6301;feed &#x7684; RSS&#xFF0C;&#x652F;&#x6301; Atom &#x7684; RSS &#x4E0D;&#x80FD;&#x7528;&#x5728; News Panel&#x3002;</p>
+<p>&#x4E2A;&#x4EBA;&#x7684; Home Dashboards &#x5C31;&#x770B;&#x6BCF;&#x4E2A;&#x4EBA;&#x7684;&#x9700;&#x6C42;&#x4E86;&#xFF0C;&#x6CA1;&#x6709;&#x56FA;&#x5B9A;&#x7684;&#x6837;&#x5F0F;&#x3002;</p>
+<p>&#x672C;&#x6587;&#x57FA;&#x4E8E; Grafana 7.x &#x8FDB;&#x884C;&#x7F16;&#x5199;&#xFF0C;&#x76F8;&#x8FD1;&#x7248;&#x672C;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x53C2;&#x8003;&#xFF0C;&#x7248;&#x672C;&#x5DEE;&#x8DDD;&#x592A;&#x591A;&#x8BF7;&#x67E5;&#x8BE2;&#x5B98;&#x7F51;&#x76F8;&#x5E94;&#x8BF4;&#x660E;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="F-1.2-install-grafana.html" class="navigation navigation-prev " aria-label="Previous page: 1.2  安装 Grafana">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="F-1.4-what-is-grafana-alerts.html" class="navigation navigation-next " aria-label="Next page: 1.4  Grafana 告警">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.3  定制 Grafana 首页","level":"7.1.3","depth":2,"next":{"title":"1.4  Grafana 告警","level":"7.1.4","depth":2,"path":"chapterF-01-Analytics-Platform/F-1.4-what-is-grafana-alerts.md","ref":"chapterF-01-Analytics-Platform/F-1.4-what-is-grafana-alerts.md","articles":[]},"previous":{"title":"1.2  安装 Grafana","level":"7.1.2","depth":2,"path":"chapterF-01-Analytics-Platform/F-1.2-install-grafana.md","ref":"chapterF-01-Analytics-Platform/F-1.2-install-grafana.md","articles":[]},"dir":"ltr"},"config":{"plugins":["pageview-count","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"pageview-count":{},"back-to-top-button":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Er Dong <erdong@mail.erdong.site>","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"CloudNative Notes","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Erdong's Blog":"https://erdong.site"}},"gitbook":"*","description":"This is a note of CloudNative","extension":null},"file":{"path":"chapterF-01-Analytics-Platform/F-1.3-change-the-default-home-dashboard.md","mtime":"2021-08-10T13:23:58.268Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-10T13:27:37.905Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
