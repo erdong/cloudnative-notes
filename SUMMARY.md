@@ -40,7 +40,7 @@
     * [2.1 xxxx](chapterB-02-Windows/B-2.1-xxx.md)
     * [小结](chapterB-02-Windows/END.md)
 
-### Part ⅠⅠⅠ 网络
+### Part ⅠⅠⅠ 网络和网关
 
 * [第一章 xxx](chapterC-01/README.md)
     * [1.1 xxxx](chapterC-01/C-1.1-xxx.md)
@@ -49,6 +49,8 @@
 * [第二章  xxxx](chapterC-02/README.md)
     * [2.1 xxxx](chapterC-02/C-2.1-xxx.md)
     * [小结](chapterC-02/END.md)
+
+* [第三章 Kong 网关](chapterC-03-kong/README.md)
 
 ### Part IV 存储
 
